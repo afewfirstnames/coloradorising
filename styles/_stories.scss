@@ -20,6 +20,7 @@
 .col {
   min-width: 250px;
   transition: all 0.35s ease-in-out;
+  position: relative;
 }
 
 .feature-img {
@@ -42,6 +43,7 @@
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
+  position: relative;
 }
 
 .small-img-row img {
@@ -54,6 +56,13 @@
 
 .small-img img {
   width: 150px;
+}
+
+.small-img p {
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    color: $cloud;
+  }
 }
 
 .small-img-row p {
@@ -69,10 +78,22 @@
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  opacity: 0.9;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    opacity: 1;
+    width: 70px;
+  }
 }
 
 .small-img .play-btn {
-  width: 35px;
+  width: 40px;
+  transition: all 0.35s ease-in-out;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+    width: 50px;
+  }
 }
 
 .video-player {

@@ -864,15 +864,18 @@ h6 {
   }
 }
 
-@media screen and (max-width: 510px) {
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .slogan {
-    width: 350px;
+    width: 325px;
     height: auto;
   }
   .cta-form {
-    width: 350px;
+    width: 325px;
     height: auto;
     font-size: 1.2rem;
+    padding: 1.5rem 2rem;
   }
   .cta-form__title {
     font-size: 1.6rem;
@@ -901,6 +904,7 @@ h6 {
   }
 }
 
+/* Landscape */
 @media screen and (max-width: 414px) {
   .cta-form {
     height: 350px;
@@ -1499,6 +1503,7 @@ article {
   min-width: 250px;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+  position: relative;
 }
 
 .feature-img {
@@ -1525,6 +1530,7 @@ article {
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
+  position: relative;
 }
 
 .small-img-row img {
@@ -1537,6 +1543,15 @@ article {
 
 .small-img img {
   width: 150px;
+}
+
+.small-img p {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.small-img p:hover {
+  color: #fafcfc;
 }
 
 .small-img-row p {
@@ -1553,10 +1568,26 @@ article {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   cursor: pointer;
+  opacity: 0.9;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.play-btn:hover {
+  opacity: 1;
+  width: 70px;
 }
 
 .small-img .play-btn {
-  width: 35px;
+  width: 40px;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  opacity: 0.7;
+}
+
+.small-img .play-btn:hover {
+  opacity: 1;
+  width: 50px;
 }
 
 .video-player {
