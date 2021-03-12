@@ -1,0 +1,271 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: $onyx;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 1;
+  width: 90%;
+}
+
+.nav-item {
+  height: auto;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav__link {
+  color: $cloud;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  margin: 0 2rem;
+  height: auto;
+  width: 100%;
+  &:hover {
+    color: $fireyellow;
+  }
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  margin: 0 1rem;
+  img {
+    width: 25px;
+    height: auto;
+  }
+}
+
+/* BUTTONS */
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1rem;
+  height: 100%;
+  width: 20%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  height: 100%;
+  width: 75%;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  outline: none;
+  background: $fireyellow;
+  color: $onyx;
+  &:hover {
+    background: $cloud;
+    border-bottom: none;
+    color: $onyx;
+    transition: all 0.3s ease;
+  }
+}
+
+/* LOGO */
+
+#logo {
+  z-index: 999;
+  max-width: 32.5rem;
+  background-color: $onyx;
+  padding: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* LARGER SCREEN ADJUSTMENTS */
+
+/* SMALLER SCREEN ADJUSTMENTS */
+@media screen and (max-width: 1396px) {
+  .nav__link {
+    margin: 0;
+    padding: 0 2rem;
+  }
+  .button {
+    margin-bottom: 15px;
+  }
+}
+
+.es {
+  color: $fireyellow;
+  &:hover {
+    color: $cloud;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #logo {
+    max-width: 30rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    max-width: 23rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #logo {
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  #logo {
+    max-width: 18rem;
+    width: 21rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #logo {
+    max-width: 28rem;
+  }
+}
+/* MOBILE MENU */
+@media screen and(max-width: 1279px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: $cloud;
+    margin: 5px;
+    border-radius: 3px;
+  }
+
+  .line {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar {
+    position: relative;
+    font-size: 2.5rem;
+  }
+
+  #logo {
+    margin-left: 4.7vw;
+    // max-width: 28rem;
+  }
+
+  .navbar-container {
+    width: 100%;
+  }
+  .mobile-menu {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    background: $onyx;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 100% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .navbar-menu.open {
+    flex-direction: column;
+    clip-path: circle(1800px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .nav-btn {
+    height: auto;
+    width: 200px;
+  }
+
+  .button {
+    font-size: 3rem;
+    border-radius: 8px;
+    width: 100%;
+  }
+  /*HAMBURGER TRANSITION */
+  .mobile-menu.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile-menu.is-active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .mobile-menu.is-active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* MOBILE MENU FADE ANIMATION */
+  .nav-item {
+    opacity: 0;
+  }
+
+  .nav__links {
+    font-size: 2.5rem;
+  }
+
+  .nav-item:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-item:nth-child(2) {
+    transition: all 0.5s ease 0.3s;
+  }
+  .nav-item:nth-child(3) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-item:nth-child(4) {
+    transition: all 0.5s ease 0.5s;
+  }
+  .nav-item:nth-child(5) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-item:nth-child(6) {
+    transition: all 0.5s ease 0.7s;
+  }
+
+  .nav-item.fade {
+    opacity: 1;
+  }
+}

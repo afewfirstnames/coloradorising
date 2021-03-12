@@ -1,0 +1,485 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: $cloud;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1300px;
+}
+
+/* CTA FORM */
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: $onyx;
+  background: #ffc030e6;
+  border-radius: 8px;
+  padding: 2rem 3.5rem;
+  max-width: 430px;
+  height: auto;
+  text-align: left;
+}
+
+.cta-form__desc {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+.cta-form__title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cta-form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-form__item > * {
+  align-self: flex-start;
+}
+
+.cta-form__label {
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.cta-form__input {
+  -webkit-appearance: none;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  border: 1px solid $dorian;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  background: $dorian;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.cta-form__input:focus {
+  background: $cloud;
+  border-color: #1f272a79;
+}
+
+.cta-form__input::placeholder {
+  color: #838688;
+}
+
+/* ERROR STYLING */
+.cta-form__input--error {
+  color: #c00336;
+  background: #faeaea;
+  border: 1px solid #c00336;
+}
+
+.cta-form__input--error::placeholder {
+  color: #fa9999;
+}
+
+.cta-form__error {
+  padding-top: 1rem;
+  color: #c00336;
+  font-size: 1.3rem;
+  visibility: hidden;
+}
+
+.cta-form__input--error + .cta-form__error {
+  visibility: visible;
+}
+
+/* SMS AGREEMENT */
+
+.sms-checkbox {
+  padding-top: 1.5rem;
+  display: flex;
+}
+.sms-checkbox__label {
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+.sms-agreement {
+  display: flex;
+}
+
+.sms__agreement {
+  font-size: 1rem;
+  padding: 0 2.3rem;
+}
+
+/* BUTTON */
+
+.cta-form__btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 8px;
+  background: $onyx;
+  color: $cloud;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  grid-area: form;
+}
+
+.cta-form__btn:hover {
+  background: #33373a;
+}
+
+/* CHECK BOX STYLING */
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    --active: #1f272a;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, 0.3);
+    --border: #acc0c7;
+    --border-hover: #1f272a;
+    --background: #ecf1f4;
+    --disabled: #f6f8ff;
+    --disabled-inner: #e1e6f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    &:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+        opacity var(--d-o, 0.2s);
+    }
+    &:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: 0.3s;
+      --d-t: 0.6s;
+      --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+    &:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+      &:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+      }
+      & + label {
+        cursor: not-allowed;
+      }
+    }
+    &:hover {
+      &:not(:checked) {
+        &:not(:disabled) {
+          --bc: var(--border-hover);
+        }
+      }
+    }
+    &:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    &:not(.switch) {
+      width: 21px;
+      &:after {
+        opacity: var(--o, 0);
+      }
+      &:checked {
+        --o: 1;
+      }
+    }
+    & + label {
+      font-size: 14px;
+      line-height: 21px;
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+  }
+  input[type="checkbox"] {
+    &:not(.switch) {
+      border-radius: 7px;
+      &:after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 7px;
+        top: 4px;
+        transform: rotate(var(--r, 20deg));
+      }
+      &:checked {
+        --r: 43deg;
+      }
+    }
+    &.switch {
+      width: 38px;
+      border-radius: 11px;
+      &:after {
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: var(--ab, var(--border));
+        transform: translateX(var(--x, 0));
+      }
+      &:checked {
+        --ab: var(--active-inner);
+        --x: 17px;
+      }
+      &:disabled {
+        &:not(:checked) {
+          &:after {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* SLOGAN CTA LEFT SIDE */
+
+.donate-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  width: 160px;
+  margin-right: 1rem;
+  border-radius: 8px;
+  background: #ffc030e6;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: background 0.35s ease-in-out;
+  &:hover {
+    background-color: #fafcfce6;
+  }
+}
+
+.volunteer-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  width: 160px;
+  margin-right: 1rem;
+  border-radius: 8px;
+  background: #fafcfce6;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: background 0.35s ease-in-out;
+  &:hover {
+    background-color: #ffc030e6;
+  }
+}
+
+.slogan {
+  max-width: 675px;
+  min-width: 300px;
+}
+
+.slogan-wrapper {
+  margin: 0 2rem;
+}
+
+.form-wrapper {
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 1279px) {
+  .hero-container {
+    justify-content: center;
+  }
+  .slogan {
+    width: 500px;
+    height: auto;
+  }
+}
+
+/* MOBILE FORM */
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .slogan {
+    width: 700px;
+  }
+
+  .slogan-wrapper {
+    margin: 0;
+  }
+
+  .form-wrapper {
+    margin: 0;
+  }
+
+  .cta-form__btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .slogan {
+    width: 350px;
+    height: auto;
+  }
+  .cta-form {
+    width: 350px;
+    height: auto;
+    font-size: 1.2rem;
+  }
+  .cta-form__title {
+    font-size: 1.6rem;
+  }
+  .cta-form__desc {
+    font-size: 1.2rem;
+  }
+  .cta-form__btn {
+    margin-top: 1rem;
+  }
+  .sms__agreement {
+    font-size: 0.7rem;
+    padding: 0;
+  }
+  .slogan {
+    margin-top: 0;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .cta-form {
+    height: 350px;
+  }
+  .slogan-wrapper {
+    margin-top: 5rem;
+  }
+  .donate-btn {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .volunteer-btn {
+    font-size: 1.2rem;
+  }
+  .slogan {
+    margin-top: 0;
+  }
+  .hero-container {
+    height: 90vh;
+  }
+  .cta-form__title {
+    font-size: 1.6rem;
+  }
+  .cta-form__desc {
+    font-size: 1rem;
+  }
+  .cta-form__label {
+    font-size: 1.2rem;
+  }
+  .sms-checkbox .sms-checkbox__label {
+    font-size: 1rem;
+  }
+  .sms__agreement {
+    font-size: 0.6rem;
+    padding: 0;
+  }
+  .cta-form__input {
+    font-size: 1.3rem;
+    padding: 0.6rem;
+  }
+}
+
+// @media screen and (max-width: 375px) {
+//   .hero-container {
+//     height: 75vh;
+//   }
+// }
+
+@media screen and (max-width: 320px) {
+  .form-wrapper {
+    display: none;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .slogan {
+    width: 100px;
+    height: auto;
+  }
+  .slogan-wrapper {
+    text-align: center;
+    padding-left: 1rem;
+  }
+  .hero-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+/* PARALLAX */
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 135vh;
+  z-index: -9;
+  object-fit: cover;
+}
+
+.hero {
+  position: relative;
+}

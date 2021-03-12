@@ -1,0 +1,106 @@
+#outro {
+  background: $onyx;
+  min-height: 100vh;
+  width: auto;
+}
+
+#intro {
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.infographic {
+  width: auto;
+  height: auto;
+}
+
+#scrolly {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: $onyx;
+  padding: 10rem;
+}
+
+#scrolly > * {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+article {
+  position: relative;
+  padding: 0 1rem;
+  max-width: 33vw;
+}
+
+.is-fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  margin-bottom: 0;
+  border-radius: 8px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-color: none;
+  z-index: 0;
+}
+
+.grahpic p {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-weight: 900;
+  color: $cloud;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem auto;
+  background-color: $lightslate;
+  border-radius: 8px;
+  color: $cloud;
+}
+
+.step {
+  opacity: 0;
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.step.is-active {
+  opacity: 1;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step.is-active {
+  background-color: $fireyellow;
+  color: $onyx;
+}
+
+.step--header {
+  font-size: 6.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.step p {
+  text-align: left;
+  padding: 1rem;
+  line-height: 1.5;
+  font-size: 3rem;
+}

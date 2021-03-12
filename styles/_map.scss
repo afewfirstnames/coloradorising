@@ -1,0 +1,172 @@
+.map-container {
+  min-height: 100vh;
+}
+
+.map-header {
+  text-align: center;
+  h1 {
+    margin-top: 30rem;
+  }
+  h3 {
+    display: block;
+    margin-bottom: 6rem;
+    color: $fireyellow;
+    padding: 0 5rem;
+  }
+}
+
+/* PARENT */
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* CHILD 1 */
+.map-img-wrapper {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.map-img {
+  border-radius: 8px;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.map-img__hover {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-img-wrapper:hover .map-img {
+  opacity: 0.3;
+}
+.map-img-wrapper:hover .map-img__hover {
+  opacity: 1;
+}
+
+.fracking-text {
+  color: $cloud;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.yellow-btn-map {
+  border: none;
+  background: $fireyellow;
+  &:hover {
+    background: $cloud;
+    color: $onyx;
+  }
+}
+
+/* CHILD 2 */
+.yellow-box {
+  max-width: 100%;
+  width: 661px;
+  height: auto;
+  border: 8px solid $fireyellow;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: start;
+  padding: 2rem;
+  p {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+}
+
+.yellow-btn {
+  background-color: $fireyellow;
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  &:hover {
+    background: $cloud;
+    color: $onyx;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .map-wrapper {
+    flex-wrap: wrap;
+  }
+  .map-img-wrapper {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .map-img {
+    max-width: 100%;
+    opacity: 0.4;
+  }
+  .map-img__hover {
+    opacity: 1;
+  }
+  .fracking-text {
+    font-size: 3vw;
+  }
+  .yellow-btn-map {
+    padding: 2vw;
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fracking-text {
+    font-size: 5vw;
+  }
+  .yellow-btn-map {
+    padding: 3vw;
+    font-size: 2.8vw;
+  }
+  .map-header {
+    h1 {
+      font-size: 8.5vw;
+    }
+    h3 {
+      font-size: 3.5vw;
+      margin-bottom: 4rem;
+    }
+  }
+  .yellow-box {
+    p {
+      font-size: 3.75vw;
+    }
+  }
+  .yellow-btn {
+    padding: 4vw;
+    font-size: 4vw;
+  }
+  .map-header {
+    text-align: center;
+    h1 {
+      margin-top: 15rem;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .yellow-box {
+    border: none;
+    padding: 1vw;
+    p {
+      font-size: 4vw;
+    }
+  }
+}
