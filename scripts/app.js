@@ -18,6 +18,40 @@ AOS.init({
   once: true,
 });
 
+/* SLICK CAROUSEL */
+$(".news-wrapper").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  nextArrow: $(".next"),
+  prevArrow: $(".prev"),
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
 /* VIDEO PLAYER */
 const videoPlayer = document.getElementById("videoPlayer");
 const myVideo = document.getElementById("myVideo");
@@ -45,33 +79,6 @@ window.addEventListener("resize", function () {
   }
 });
 
-$(document).ready(function () {
-  $(".news-slider").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 8000,
-    arrows: true,
-    prevArrow: $(".prev"),
-    nextArrow: $(".next"),
-    dots: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-});
 // WHAT IS FRACKING ANIMATION */
 
 // // using d3 for convenience
