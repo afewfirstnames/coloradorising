@@ -1688,7 +1688,7 @@ video:focus {
   margin: 0px 1rem;
   padding: 0;
   border-radius: 8px;
-  max-width: 300px;
+  max-width: 100%;
   max-height: 330px;
   width: 300px;
   height: auto;
@@ -1751,5 +1751,20 @@ video:focus {
 .fa-user,
 .fa-calendar {
   color: #5d696d;
+}
+
+@media screen and (max-width: 600px) {
+  .link-dark {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .next {
+    color: #061a24;
+  }
+  .prev {
+    color: #061a24;
+  }
 }
 /*# sourceMappingURL=style.css.map */
