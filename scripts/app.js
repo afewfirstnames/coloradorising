@@ -1,3 +1,9 @@
+/* PROGRAM SLIDERS */
+AOS.init({
+  offset: 250,
+  duration: 800,
+  once: true,
+});
 /* MOBILE MENU ANIMATION */
 const menu = document.querySelector(".mobile-menu");
 const navLinks = document.querySelector(".navbar-menu");
@@ -9,13 +15,6 @@ menu.addEventListener("click", () => {
   links.forEach((link) => {
     link.classList.toggle("fade");
   });
-});
-
-/* PROGRAM SLIDERS */
-AOS.init({
-  offset: 250,
-  duration: 800,
-  once: true,
 });
 
 /* SLICK CAROUSEL */
