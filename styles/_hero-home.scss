@@ -1,3 +1,4 @@
+/* HERO BACKGROUND FORM AND CTA */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
   height: 100vh;
@@ -7,20 +8,21 @@
   background-position: fixed;
   color: $cloud;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
 }
 
 .hero-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
-  width: 100vw;
   max-width: 1300px;
+}
+
+.form-wrapper {
+  margin: 0 2rem;
 }
 
 /* CTA FORM */
@@ -121,16 +123,13 @@
   padding: 0 1rem;
 }
 
-.sms-agreement {
-  display: flex;
-}
-
 .sms__agreement {
   font-size: 1rem;
   padding: 0 2.3rem;
+  display: flex;
 }
 
-/* BUTTON */
+/* FORM BUTTON */
 
 .cta-form__btn {
   text-transform: uppercase;
@@ -154,7 +153,7 @@
   background: #33373a;
 }
 
-/* CHECK BOX STYLING */
+/* SMS CHECK BOX STYLING */
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type="checkbox"],
@@ -330,9 +329,23 @@
   margin: 0 2rem;
 }
 
-.form-wrapper {
-  margin: 0 2rem;
+/* PARALLAX SCROLL */
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 135vh;
+  z-index: -9;
+  object-fit: cover;
 }
+
+.hero {
+  position: relative;
+}
+
+/* MOBILE FORMAT */
 
 @media screen and (max-width: 1279px) {
   .hero-container {
@@ -345,8 +358,10 @@
 }
 
 /* MOBILE FORM */
+
+/* Portrait */
 @media screen and (max-width: 1024px) {
-  .hero-container {
+  .hero {
     flex-direction: column;
     justify-content: space-evenly;
   }
@@ -371,63 +386,122 @@
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .slogan {
-    width: 325px;
+    width: 340px;
     height: auto;
   }
   .cta-form {
     width: 325px;
-    height: auto;
+    height: 375px;
     font-size: 1.2rem;
     padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
   }
   .cta-form__title {
     font-size: 1.6rem;
   }
   .cta-form__desc {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .cta-form__btn {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
   }
-  .sms__agreement {
-    font-size: 0.7rem;
+  #sms-legal {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .sms-checkbox__label {
     padding: 0;
   }
   .slogan {
     margin-top: 0;
   }
-  .hero-container {
-    flex-direction: column;
-  }
   .hero {
-    height: 90vh;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-container {
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .hero {
+    flex-direction: row;
+  }
+  .slogan {
+    width: 325px;
+    height: auto;
+  }
+  .cta-form {
+    width: 300px;
+    height: 300px;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 5rem;
+  }
+  .cta-form__title {
+    font-size: 1.5rem;
+  }
+  .cta-form__desc {
+    font-size: 1.1rem;
+  }
+  #logo {
+    max-width: 22rem;
+  }
+
+  .cta-form__input {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+
+  .sms-checkbox__label {
+    padding: 0;
+  }
+
+  .sms__agreement {
+    display: none;
+  }
+
+  .cta-form__btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+  }
 }
 
-@media screen and (max-width: 414px) {
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .cta-form {
     height: 350px;
   }
+
   .slogan-wrapper {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
+
   .donate-btn {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
+
   .volunteer-btn {
     font-size: 1.2rem;
   }
-  .slogan {
-    margin-top: 0;
-  }
+
   .hero-container {
-    height: 90vh;
+    margin-bottom: 1rem;
   }
+
+  .hero {
+    justify-content: center;
+  }
+
   .cta-form__title {
     font-size: 1.6rem;
   }
@@ -450,45 +524,213 @@
   }
 }
 
-// @media screen and (max-width: 375px) {
-//   .hero-container {
-//     height: 75vh;
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .hero {
+    flex-direction: row;
+  }
+  .slogan {
+    width: 325px;
+    height: auto;
+  }
+  .cta-form {
+    width: 300px;
+    height: 300px;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 5rem;
+  }
+  .cta-form__title {
+    font-size: 1.5rem;
+  }
+  .cta-form__desc {
+    font-size: 1.1rem;
+  }
+  #logo {
+    max-width: 22rem;
+  }
+
+  .cta-form__input {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+
+  .sms-checkbox__label {
+    padding: 0;
+  }
+
+  .sms__agreement {
+    display: none;
+  }
+
+  .cta-form__btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .hero {
+    justify-content: space-evenly;
+  }
+  .hero-container {
+    margin: 0;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .hero {
+    flex-direction: row;
+  }
+  .slogan {
+    width: 325px;
+    height: auto;
+  }
+  .cta-form {
+    width: 300px;
+    height: 300px;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 5rem;
+  }
+  .cta-form__title {
+    font-size: 1.5rem;
+  }
+  .cta-form__desc {
+    font-size: 1.1rem;
+  }
+  #logo {
+    max-width: 22rem;
+  }
+
+  .cta-form__input {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+
+  .sms-checkbox__label {
+    padding: 0;
+  }
+
+  .sms__agreement {
+    display: none;
+  }
+
+  .cta-form__btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+  }
+}
+
+/* ----------- iPhone XR ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .hero {
+    justify-content: space-evenly;
+  }
+  .hero-container {
+    margin: 0;
+  }
+  .cta-form {
+    height: 375px;
+  }
+  .cta-form__btn {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .hero {
+    flex-direction: row;
+  }
+  .slogan {
+    width: 350px;
+    height: auto;
+  }
+  .cta-form {
+    width: 300px;
+    height: 300px;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 5rem;
+  }
+  .cta-form__title {
+    font-size: 1.5rem;
+  }
+  .cta-form__desc {
+    font-size: 1.1rem;
+  }
+  #logo {
+    max-width: 22rem;
+  }
+
+  .cta-form__input {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+
+  .sms-checkbox__label {
+    padding: 0;
+  }
+
+  .sms__agreement {
+    display: none;
+  }
+
+  .cta-form__btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+//   .slogan {
+//     margin-top: 5rem;
+//     width: 100px;
+//     height: auto;
+//   }
+//   .hero {
+//     justify-content: space-around;
+//   }
+//   .cta-form {
+//     display: none;
+//   }
+//   #logo {
+//     max-width: 22rem;
+//   }
+//   .volunteer-btn {
+//     margin-top: 2rem;
+//     width: 90%;
+//   }
+//   .donate-btn {
+//     margin-top: 2rem;
+//     width: 90%;
 //   }
 // }
 
-@media screen and (max-width: 320px) {
-  .form-wrapper {
-    display: none;
-  }
-  .hero {
-    height: 100vh;
-  }
-  .slogan {
-    width: 100px;
-    height: auto;
-  }
-  .slogan-wrapper {
-    text-align: center;
-    padding-left: 1rem;
-  }
-  .hero-container {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-}
-
-/* PARALLAX */
-
-.parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 135vh;
-  z-index: -9;
-  object-fit: cover;
-}
-
-.hero {
-  position: relative;
-}
+// /* Landscape */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+//   .slogan {
+//     width: 200px;
+//     height: auto;
+//   }
+//   .cta-form {
+//     display: none;
+//   }
+//   .hero {
+//     justify-content: center;
+//   }
+//   .hero-container {
+//     margin-top: 4.5rem;
+//   }
+// }

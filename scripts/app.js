@@ -4,6 +4,7 @@ AOS.init({
   duration: 800,
   once: true,
 });
+
 /* MOBILE MENU ANIMATION */
 const menu = document.querySelector(".mobile-menu");
 const navLinks = document.querySelector(".navbar-menu");

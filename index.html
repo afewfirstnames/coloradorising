@@ -22,7 +22,10 @@
 </head>
 
 <body>
+    <!-- HERO BACKGROUND IMAGE -->
     <img src="/images/hero.jpg" class="parallax">
+
+    <!-- NAV BAR -->
     <nav class="navbar">
         <div class="navbar-container">
             <a href="/"><img src="/images/logo-test.png" id="logo" /></a>
@@ -68,8 +71,10 @@
             </ul>
         </div>
     </nav>
+    <!-- END NAV BAR -->
 
     <main>
+
         <!--HERO CTA-->
         <section class="hero">
             <div class="hero-container">
@@ -80,43 +85,42 @@
                         <button class="volunteer-btn">Volunteer</button>
                     </div>
                 </div>
+            </div>
 
-                <!--FORM START-->
-                <div class="form-wrapper">
-                    <form class="cta-form" id="form" action="./" method="POST">
-                        <div class="cta-form__title">Join Our Movement</div>
-                        <p class="cta-form__desc">
-                            Sign up now to show your support and recieve Colorado Rising For
-                            Communities updates.
-                        </p>
-                        <div class="cta-form__item">
-                            <label for="email" class="cta-form__label">Email</label>
-                            <input name="email" type="email" id="email" class="cta-form__input"
-                                placeholder="email@email.com" />
-                            <div id="error" class="cta-form__error"></div>
+            <!--FORM START-->
+            <div class="form-wrapper">
+                <form class="cta-form" id="form" action="./" method="POST">
+                    <div class="cta-form__title">Join Our Movement</div>
+                    <p class="cta-form__desc">
+                        Sign up now to show your support and recieve Colorado Rising For
+                        Communities updates.
+                    </p>
+                    <div class="cta-form__item">
+                        <label for="email" class="cta-form__label">Email</label>
+                        <input name="email" type="email" id="email" class="cta-form__input"
+                            placeholder="email@email.com" />
+                        <div id="error" class="cta-form__error"></div>
+                    </div>
+                    <div class="cta-form__item">
+                        <label for="phone" class="cta-form__label">Mobile Phone (Optional)</label>
+                        <input name="phone" type="tel" id="phone" class="cta-form__input" placeholder="555-555-5555" />
+                        <div class="sms-checkbox">
+                            <input class="sms-checkbox--box" id="sms" name="sms" type="checkbox" />
+                            <label for="sms" class="sms-checkbox__label">Sign me up for SMS messages.</label>
                         </div>
-                        <div class="cta-form__item">
-                            <label for="phone" class="cta-form__label">Mobile Phone (Optional)</label>
-                            <input name="phone" type="tel" id="phone" class="cta-form__input"
-                                placeholder="555-555-5555" />
-                            <div class="sms-checkbox">
-                                <input class="sms-checkbox--box" id="sms" name="sms" type="checkbox" />
-                                <label for="sms" class="sms-checkbox__label">Sign me up for SMS messages.</label>
-                            </div>
-                            <div class="sms-agreement">
-                                <p class="sms__agreement">
-                                    By submitting your cell phone number you are agreeing to receive
-                                    periodic text messages from this organization. Message and data
-                                    rates may apply. Text HELP for more information. Text STOP to stop
-                                    receiving messages.
-                                </p>
-                            </div>
+                        <div class="sms-agreement">
+                            <p class="sms__agreement" id="sms-legal">
+                                By submitting your cell phone number you are agreeing to receive
+                                periodic text messages from this organization. Message and data
+                                rates may apply. Text HELP for more information. Text STOP to stop
+                                receiving messages.
+                            </p>
                         </div>
-                        <div class="cta-form__item">
-                            <button class="cta-form__btn" type="submit" id="submit">Sign Up</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="cta-form__item">
+                        <button class="cta-form__btn" type="submit" id="submit">Sign Up</button>
+                    </div>
+                </form>
             </div>
             <!--FORM END-->
         </section>
