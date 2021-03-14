@@ -871,22 +871,6 @@ h6 {
   }
 }
 
-/* PARALLAX SCROLL */
-.parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 135vh;
-  z-index: -9;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.hero {
-  position: relative;
-}
-
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -1199,6 +1183,22 @@ h6 {
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 /* Portrait */
+/* PARALLAX SCROLL */
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 135vh;
+  z-index: -9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero {
+  position: relative;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
