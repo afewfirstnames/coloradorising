@@ -70,13 +70,24 @@ window.addEventListener("resize", function () {
   if (window.innerWidth > 414) {
     window.addEventListener("scroll", function () {
       const parallax = document.querySelector(".parallax");
-      const foreground = document.querySelector(".hero-container");
+      const foreground = document.querySelector(".hero");
 
       let scrollPosition = window.pageYOffset;
       parallax.style.transform = "translateY(" + scrollPosition * 0.4 + "px)";
       foreground.style.transform = "translateY(" + scrollPosition * 0.1 + "px)";
     });
   }
+});
+
+/* ACCORDIAN */
+const myAccordion = new gianniAccordion({
+  elements: ".acc-card .acc-card__article",
+  trigger: "[data-accordion-element-trigger]",
+  content: "[data-accordion-element-content]",
+});
+
+myAccordion.on("elementSelected", (data) => {
+  console.log("elementOpened", data);
 });
 
 // WHAT IS FRACKING ANIMATION */

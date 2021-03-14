@@ -10,6 +10,7 @@
 
 .news-slider {
   position: relative;
+  // max-width: 90%;
 }
 .news-wrapper {
   width: 84%;
@@ -26,7 +27,7 @@
   padding: 0;
   border-radius: 8px;
   max-width: 100%;
-  max-height: 330px;
+  // max-height: 330px;
   width: 300px;
   height: auto;
   box-shadow: 1rem 1rem 1rem -1rem #000;
@@ -56,6 +57,7 @@
   height: 200px;
   border-radius: 8px 8px 0 0;
   top: 0;
+  object-fit: cover;
 }
 
 .post-info {

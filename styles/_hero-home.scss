@@ -329,22 +329,6 @@
   margin: 0 2rem;
 }
 
-/* PARALLAX SCROLL */
-
-.parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 135vh;
-  z-index: -9;
-  object-fit: cover;
-}
-
-.hero {
-  position: relative;
-}
-
 /* MOBILE FORMAT */
 
 @media screen and (max-width: 1279px) {
@@ -380,6 +364,22 @@
   .cta-form__btn {
     width: 100%;
   }
+}
+
+/* PARALLAX SCROLL */
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 135vh;
+  z-index: -9;
+  object-fit: cover;
+}
+
+.hero {
+  position: relative;
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */

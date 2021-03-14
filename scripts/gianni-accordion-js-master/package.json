@@ -1,0 +1,27 @@
+{
+  "name": "gianni-accordion-js",
+  "version": "1.0.0",
+  "description": "A tiny module to manage height transition in multiple (or even just one) elements without pain. ",
+  "main": "gianni.accordion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cant89/gianni-accordion-js.git"
+  },
+  "author": "Davide Cantelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cant89/gianni-accordion-js/issues"
+  },
+  "homepage": "https://github.com/cant89/gianni-accordion-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
