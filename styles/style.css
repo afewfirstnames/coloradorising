@@ -1,4 +1,8 @@
 /* FONTS AND FONT SIZES */
+@-ms-viewport {
+  width: device-width;
+}
+
 *,
 *:before,
 *:after {
