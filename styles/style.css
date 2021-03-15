@@ -354,8 +354,8 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-clip-path: circle(100px at 100% -20%);
-            clip-path: circle(100px at 100% -20%);
+    -webkit-clip-path: circle(10px at 100% -20%);
+            clip-path: circle(10px at 100% -20%);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
     pointer-events: none;
@@ -435,8 +435,6 @@ h6 {
 
 /* HERO BACKGROUND FORM AND CTA */
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
-  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
@@ -846,8 +844,8 @@ h6 {
 }
 
 /* MOBILE FORM */
-/* Portrait */
-@media screen and (max-width: 1024px) {
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -866,8 +864,57 @@ h6 {
   .form-wrapper {
     margin: 0;
   }
+  #sms-legal {
+    display: none;
+  }
   .cta-form__btn {
     width: 100%;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .slogan {
+    width: 100px;
+    height: auto;
+    padding-left: 4rem;
+  }
+  .hero {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cta-form {
+    display: none;
+  }
+  #logo {
+    max-width: 22rem;
+  }
+  .volunteer-btn {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    width: 90%;
+  }
+  .donate-btn {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    width: 90%;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .cta-form {
+    display: none;
+  }
+  .hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #logo {
+    width: 16rem;
+    padding: 1rem;
   }
 }
 
@@ -877,6 +924,17 @@ h6 {
   .slogan {
     width: 340px;
     height: auto;
+    padding-left: 0;
+  }
+  .volunteer-btn {
+    margin-left: 0;
+    margin-top: 0;
+    width: 160px;
+  }
+  .donate-btn {
+    margin-top: 0;
+    margin-left: 0;
+    width: 160px;
   }
   .cta-form {
     width: 325px;
@@ -884,6 +942,12 @@ h6 {
     font-size: 1.2rem;
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
+    display: block;
+  }
+  .cta-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .cta-form__title {
     font-size: 1.6rem;
@@ -893,6 +957,7 @@ h6 {
   }
   .cta-form__btn {
     margin-top: 0.75rem;
+    width: 100%;
   }
   #sms-legal {
     font-size: 0.9rem;
@@ -934,6 +999,7 @@ h6 {
   .slogan {
     width: 325px;
     height: auto;
+    padding: 0;
   }
   .cta-form {
     width: 300px;
@@ -965,6 +1031,13 @@ h6 {
     font-size: 1.6rem;
     padding: 0.5rem 0;
     margin-top: 1rem;
+    width: 100%;
+  }
+  .volunteer-btn {
+    margin: 0;
+  }
+  .donate-btn {
+    margin: 0;
   }
 }
 
@@ -1049,6 +1122,9 @@ h6 {
   .sms-checkbox__label {
     padding: 0;
   }
+  .cta-form__btn {
+    width: 100%;
+  }
   .sms__agreement {
     display: none;
   }
@@ -1083,6 +1159,9 @@ h6 {
   .slogan {
     width: 325px;
     height: auto;
+  }
+  .cta-form__btn {
+    width: 100%;
   }
   .cta-form {
     width: 300px;
@@ -1144,6 +1223,9 @@ h6 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .cta-form__btn {
+    width: 100%;
+  }
   .slogan {
     width: 350px;
     height: auto;
@@ -1181,22 +1263,22 @@ h6 {
   }
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait */
 /* PARALLAX SCROLL */
 .parallax {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 135vh;
-  z-index: -9;
+  z-index: -99;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .hero {
   position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
 }
 
 .container {
@@ -1212,6 +1294,7 @@ h6 {
 
 .program-background {
   background: #061a24;
+  z-index: 5;
 }
 
 .main-header {
@@ -1996,7 +2079,7 @@ video:focus {
 
 .acc-card {
   overflow: scroll;
-  width: 400px;
+  width: 100vw;
   margin: 50px auto;
   border-radius: 2px;
   background: #061a24;

@@ -66,17 +66,26 @@ function playVideo(file) {
 }
 
 /* PARALLAX SCROLL */
-window.addEventListener("resize", function () {
-  if (window.innerWidth > 414) {
-    window.addEventListener("scroll", function () {
-      const parallax = document.querySelector(".parallax");
-      const foreground = document.querySelector(".hero");
+// window.addEventListener("resize", function () {
+//   if (window.innerWidth > 0) {
+//     window.addEventListener("scroll", function () {
+//       const parallax = document.querySelector(".parallax");
+//       const foreground = document.querySelector(".hero");
 
-      let scrollPosition = window.pageYOffset;
-      parallax.style.transform = "translateY(" + scrollPosition * 0.4 + "px)";
-      foreground.style.transform = "translateY(" + scrollPosition * 0.1 + "px)";
-    });
-  }
+//       let scrollPosition = window.pageYOffset;
+//       parallax.style.transform = "translateY(" + scrollPosition * 0.4 + "px)";
+//       foreground.style.transform = "translateY(" + scrollPosition * 0 + "px)";
+//     });
+//   }
+// });
+
+window.addEventListener("scroll", function () {
+  const parallax = document.querySelector(".parallax");
+  const foreground = document.querySelector(".hero");
+
+  let scrollPosition = window.pageYOffset;
+  parallax.style.transform = "translateY(" + scrollPosition * 0.4 + "px)";
+  foreground.style.transform = "translateY(" + scrollPosition * 0 + "px)";
 });
 
 /* ACCORDIAN */
