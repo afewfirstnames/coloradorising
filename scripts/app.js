@@ -99,90 +99,45 @@ myAccordion.on("elementSelected", (data) => {
   console.log("elementOpened", data);
 });
 
-// WHAT IS FRACKING ANIMATION */
+/* TRUTH RISING SLIDER */
+const carouselSlide = document.querySelector(".carousel-slide");
+const carouselImages = document.querySelectorAll(".iframe-container");
 
-// // using d3 for convenience
-// const main = d3.select("main");
-// const scrolly = main.select("#scrolly");
-// const figure = scrolly.select("figure");
-// const article = scrolly.select("article");
-// const step = article.selectAll(".step");
-// const graphic = document.querySelector(".infographic");
+// BUTTONS
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
 
-// // initialize the scrollama
-// const scroller = scrollama();
+//COUNTER
+let counter = 1;
+const size = carouselImages[0].clientWidth;
 
-// // generic window resize listener event
-// function handleResize() {
-//   // 1. update height of step elements
-//   const stepH = Math.floor(window.innerHeight * 0.75);
-//   step.style("height", stepH + "px");
+carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
-//   const figureHeight = window.innerHeight / 2;
-//   const figureMarginTop = (window.innerHeight - figureHeight) / 2;
+//BUTTON LISTENERS
 
-//   figure
-//     .style("height", figureHeight + "px")
-//     .style("top", figureMarginTop + "px");
+nextBtn.addEventListener("click", () => {
+  if (counter >= carouselImages.length - 1) return;
+  carouselSlide.style.transition = "transform 0.8s ease-in-out";
+  counter++;
+  carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+});
 
-//   // 3. tell scrollama to update new element dimensions
-//   scroller.resize();
-// }
+prevBtn.addEventListener("click", () => {
+  if (counter <= 0) return;
+  carouselSlide.style.transition = "transform 0.8s ease-in-out";
+  counter--;
+  carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+});
 
-// // scrollama event handlers
-// function handleStepEnter(response) {
-//   console.log(response);
-//   // response = { element, direction, index }
-
-//   // add color to current step only
-//   step.classed("is-active", function (d, i) {
-//     return i === response.index;
-//   });
-
-//   // update graphic based on step
-//   // figure.select("p").text(response.index + 1);
-
-//   if (response.index === 0) {
-//     graphic.classList.toggle(".active");
-//     return (graphic.src = "/images/step_1.jpg");
-//   } else if (response.index === 1) {
-//     return (graphic.src = "/images/step_2.jpg");
-//   } else if (response.index === 2) {
-//     return (graphic.src = "/images/step_3.jpg");
-//   } else if (response.index === 3) {
-//     return (graphic.src = "/images/fracking-infographic.png");
-//   }
-// }
-
-// function setupStickyfill() {
-//   d3.selectAll(".sticky").each(function () {
-//     Stickyfill.add(this);
-//   });
-// }
-
-// function init() {
-//   setupStickyfill();
-
-//   // 1. force a resize on load to ensure proper dimensions are sent to scrollama
-//   handleResize();
-
-//   // 2. setup the scroller passing options
-//   // 		this will also initialize trigger observations
-//   // 3. bind scrollama event handlers (this can be chained like below)
-//   scroller
-//     .setup({
-//       graphic: ".scroll__graphic",
-//       container: "#scrolly",
-//       text: ".scroll__text",
-//       step: "#scrolly article .step",
-//       offset: 0.5,
-//       debug: false,
-//     })
-//     .onStepEnter(handleStepEnter);
-
-//   // setup resize event
-//   window.addEventListener("resize", handleResize);
-// }
-
-// // kick things off
-// init();
+carouselSlide.addEventListener("transitionend", () => {
+  if (carouselImages[counter].id === "lastClone") {
+    carouselSlide.style.transition = "none";
+    counter = carouselImages.length - 2;
+    carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+  }
+  if (carouselImages[counter].id === "firstClone") {
+    carouselSlide.style.transition = "none";
+    counter = carouselImages.length - counter;
+    carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+  }
+});
