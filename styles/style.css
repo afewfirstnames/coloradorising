@@ -2159,7 +2159,8 @@ video:focus {
 
 .acc-card__header:active,
 .selected .acc-card__header {
-  background: #ffc030;
+  background: #ffb300;
+  border-radius: 8px 8px 0 0;
 }
 
 .acc-card__header:before, .acc-card__header:after {
@@ -2204,7 +2205,7 @@ video:focus {
 
 .content {
   opacity: 0;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: all ease-out 0.4s 0.1s;

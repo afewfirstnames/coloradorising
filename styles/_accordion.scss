@@ -65,7 +65,8 @@
   }
   &:active,
   .selected & {
-    background: $fireyellow;
+    background: #ffb300;
+    border-radius: 8px 8px 0 0;
   }
 
   &:before,
@@ -103,7 +104,7 @@
 
 .content {
   opacity: 0;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   transform: translateY(20px);
   transition: all ease-out 0.4s 0.1s;
 
