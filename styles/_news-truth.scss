@@ -62,7 +62,10 @@
 
 .post-info {
   height: 130px;
-  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1rem;
   font-family: "Roboto", sans-serif;
   h5 {
     margin: 5px;
