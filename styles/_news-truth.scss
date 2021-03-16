@@ -10,10 +10,10 @@
 
 .news-slider {
   position: relative;
-  // max-width: 90%;
 }
+
 .news-wrapper {
-  width: 84%;
+  width: 80%;
   height: 350px;
   margin: 0px auto;
   overflow: hidden;
@@ -27,7 +27,6 @@
   padding: 0;
   border-radius: 8px;
   max-width: 100%;
-  // max-height: 330px;
   width: 300px;
   height: auto;
   box-shadow: 1rem 1rem 1rem -1rem #000;
@@ -37,19 +36,27 @@
 .next {
   position: absolute;
   top: 50%;
-  right: 3rem;
-  font-size: 3.6rem;
-  color: $fireyellow;
+  right: 8rem;
+  font-size: 4rem;
+  color: $dorian;
   cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    color: $fireyellow;
+  }
 }
 
 .prev {
   position: absolute;
   top: 50%;
-  left: 3rem;
-  font-size: 3.6rem;
-  color: $fireyellow;
+  left: 8rem;
+  font-size: 4rem;
+  color: $dorian;
   cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    color: $fireyellow;
+  }
 }
 
 .slider-image {
@@ -67,9 +74,9 @@
   align-items: flex-start;
   padding: 0 1rem;
   font-family: "Roboto", sans-serif;
-  h5 {
-    margin: 5px;
-  }
+  // h5 {
+  //   margin: 5px;
+  // }
 }
 
 .author-cal-wrapper {
@@ -89,20 +96,115 @@
 
 .fa-user,
 .fa-calendar {
-  color: $lightslate;
+  color: $slate;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .slider-title {
+    font-size: 4rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .link-dark {
+    font-size: 1.3rem;
+  }
+  .post-info {
+    padding: 0 0.3rem;
+  }
+  .fa-user,
+  .fa-calendar {
+    font-size: 1.2rem;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+  .slider-title {
+    font-size: 4rem;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .link-dark {
+    font-size: 1.3rem;
+  }
+  .post-info {
+    padding: 0 0.3rem;
+  }
+  .fa-user,
+  .fa-calendar {
+    font-size: 1.2rem;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .link-dark {
+    font-size: 1.3rem;
+  }
+  .post-info {
+    padding: 0 0.3rem;
+  }
+  .fa-user,
+  .fa-calendar {
+    font-size: 1.2rem;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .link-dark {
+    font-size: 1.3rem;
+  }
+  .post-info {
+    padding: 0 0.3rem;
+  }
+  .fa-user,
+  .fa-calendar {
+    font-size: 1.2rem;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .link-dark {
     font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .next {
-    color: $onyx;
-  }
-  .prev {
-    color: $onyx;
   }
 }

@@ -1973,7 +1973,7 @@ video:focus {
 }
 
 .news-wrapper {
-  width: 84%;
+  width: 80%;
   height: 350px;
   margin: 0px auto;
   overflow: hidden;
@@ -1997,19 +1997,31 @@ video:focus {
 .next {
   position: absolute;
   top: 50%;
-  right: 3rem;
-  font-size: 3.6rem;
-  color: #ffc030;
+  right: 8rem;
+  font-size: 4rem;
+  color: #ecf1f4;
   cursor: pointer;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.next:hover {
+  color: #ffc030;
 }
 
 .prev {
   position: absolute;
   top: 50%;
-  left: 3rem;
-  font-size: 3.6rem;
-  color: #ffc030;
+  left: 8rem;
+  font-size: 4rem;
+  color: #ecf1f4;
   cursor: pointer;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.prev:hover {
+  color: #ffc030;
 }
 
 .slider-image {
@@ -2037,10 +2049,6 @@ video:focus {
   font-family: "Roboto", sans-serif;
 }
 
-.post-info h5 {
-  margin: 5px;
-}
-
 .author-cal-wrapper {
   padding-top: 2rem;
 }
@@ -2060,21 +2068,116 @@ video:focus {
 
 .fa-user,
 .fa-calendar {
-  color: #5d696d;
+  color: #1f272a;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .slider-title {
+    font-size: 4rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .link-dark {
+    font-size: 1.3rem;
+  }
+  .post-info {
+    padding: 0 0.3rem;
+  }
+  .fa-user,
+  .fa-calendar {
+    font-size: 1.2rem;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+  .slider-title {
+    font-size: 4rem;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .link-dark {
+    font-size: 1.3rem;
+  }
+  .post-info {
+    padding: 0 0.3rem;
+  }
+  .fa-user,
+  .fa-calendar {
+    font-size: 1.2rem;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .link-dark {
+    font-size: 1.3rem;
+  }
+  .post-info {
+    padding: 0 0.3rem;
+  }
+  .fa-user,
+  .fa-calendar {
+    font-size: 1.2rem;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .link-dark {
+    font-size: 1.3rem;
+  }
+  .post-info {
+    padding: 0 0.3rem;
+  }
+  .fa-user,
+  .fa-calendar {
+    font-size: 1.2rem;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .link-dark {
     font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .next {
-    color: #061a24;
-  }
-  .prev {
-    color: #061a24;
   }
 }
 
@@ -2569,6 +2672,14 @@ hr.hr-1 {
   }
 }
 
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .accordion {
+    height: 160vh;
+  }
+}
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -2661,6 +2772,13 @@ hr.hr-1 {
   }
 }
 
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .accordion {
+    height: 210vh;
+  }
+}
+
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .accordion {
     height: 390vh;
@@ -2676,6 +2794,13 @@ hr.hr-1 {
   }
   .acc-card__header {
     font-size: 2rem;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .accordion {
+    height: 220vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

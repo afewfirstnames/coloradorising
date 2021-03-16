@@ -380,6 +380,14 @@ hr.hr-1 {
   }
 }
 
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .accordion {
+    height: 160vh;
+  }
+}
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -472,6 +480,13 @@ hr.hr-1 {
   }
 }
 
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .accordion {
+    height: 210vh;
+  }
+}
+
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .accordion {
     height: 390vh;
@@ -487,5 +502,12 @@ hr.hr-1 {
   }
   .acc-card__header {
     font-size: 2rem;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .accordion {
+    height: 220vh;
   }
 }
