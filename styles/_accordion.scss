@@ -6,7 +6,7 @@
 
 // JUST TO STYLE THIS PEN
 .accordion {
-  height: 120vh;
+  height: 150vh;
 }
 
 .accordion .acc-main-header {
@@ -15,7 +15,6 @@
   margin: 0 auto;
 }
 .acc-card {
-  overflow: scroll;
   width: 90vw;
   height: 100vh;
   margin: 50px auto;
@@ -37,8 +36,9 @@
   margin-bottom: 2rem;
 
   &.selected {
-    transform: scale(1.1);
+    transform: scale(1.15);
     z-index: 2;
+    position: absolute;
   }
 }
 
@@ -104,8 +104,10 @@
 
 .content {
   opacity: 0;
+  height: 400px;
+  overflow: auto;
   border-radius: 0 0 8px 8px;
-  transform: translateY(20px);
+  transform: translateY(0);
   transition: all ease-out 0.4s 0.1s;
 
   .selected & {
@@ -124,6 +126,33 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: $slate;
+  h2 {
+    line-height: 4rem;
+  }
+}
+
+.acc-blue-title {
+  color: $bluespruce;
+}
+
+.acc-orange-title-gradient {
+  background: linear-gradient(to right, #ff9800 0%, #ff9800 5px, transparent);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: $onyx;
+  padding-left: 1rem;
+}
+.acc-blue-title-gradient {
+  background: linear-gradient(
+    to right,
+    $bluespruce 0%,
+    $bluespruce 5px,
+    transparent
+  );
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: $onyx;
+  padding-left: 1rem;
 }
 
 .acc-list {
@@ -170,6 +199,32 @@
       transparent
     );
   }
+}
+
+.acc-list-style-blue {
+  background: linear-gradient(
+    to right,
+    $bluespruce 0%,
+    $bluespruce 5px,
+    transparent 5px
+  );
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: $onyx;
+  padding-left: 1rem;
+}
+
+.acc-list-style-orange {
+  background: linear-gradient(
+    to right,
+    #ffb300 0%,
+    #ffb300 5px,
+    transparent 5px
+  );
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: $onyx;
+  padding-left: 1rem;
 }
 
 .acc-link-min {
@@ -274,19 +329,21 @@ hr.hr-1 {
   }
 }
 
-@media screen and (max-width: 1102px) {
-  .acc-card__header {
-    font-size: 2rem;
-  }
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .accordion {
-    height: 150vh;
+    height: 220vh;
   }
-  .acc-card {
-    width: 100%;
-    display: block;
-    // height: 150vh;
+  .acc-main-header {
+    font-size: 3rem;
   }
-  .acc-col {
-    margin-left: 30%;
+  .acc-card__article {
+    min-width: 35rem;
+  }
+  .acc-card__header {
+    font-size: 1.8rem;
+  }
+  .content {
+    height: 350px;
   }
 }
