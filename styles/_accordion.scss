@@ -36,7 +36,7 @@
   margin-bottom: 2rem;
 
   &.selected {
-    transform: scale(1.15);
+    transform: scale(1.1);
     z-index: 2;
     position: absolute;
   }
@@ -345,5 +345,8 @@ hr.hr-1 {
   }
   .content {
     height: 350px;
+  }
+  .acc-card__p {
+    padding: 15px 15px 15px;
   }
 }
