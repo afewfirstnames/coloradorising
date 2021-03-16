@@ -1,5 +1,3 @@
-// NECESSARY
-
 [data-accordion-element-content] {
   height: auto;
   overflow: hidden;
@@ -8,49 +6,66 @@
 
 // JUST TO STYLE THIS PEN
 .accordion {
-  height: 100vh;
-  h1 {
-    text-align: center;
-  }
+  height: 120vh;
 }
 
+.accordion .acc-main-header {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
 .acc-card {
   overflow: scroll;
-  width: 100vw;
+  width: 90vw;
+  height: 100vh;
   margin: 50px auto;
   border-radius: 2px;
-  background: $onyx;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background: none;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .acc-card__article {
   position: relative;
   font-family: "Roboto", sans-serif;
+  width: 45.55rem;
+  min-width: 40rem;
   transition: all 0.3s;
   background: none;
+  margin-bottom: 2rem;
 
   &.selected {
     transform: scale(1.1);
-    box-shadow: 0 0 5px rgba(2, 2, 2, 0.4);
     z-index: 2;
   }
 }
 
+.acc-col {
+  margin-top: 5rem;
+}
 .acc-card__header {
+  max-width: 100%;
+  width: 45.55rem;
   position: relative;
   background: $fireyellow;
-  padding: 20px 75px 20px 30px;
-  font-size: 20px;
-  line-height: 30px;
+  padding: 20px 10rem 20px 30px;
+  font-size: 2.4rem;
+  line-height: 5rem;
   color: $onyx;
   overflow: hidden;
-  transition: background 0.3s;
+  border-radius: 8px;
+  transition: background 0.5s;
 
   &:hover,
   .selected & {
     cursor: pointer;
-    background: #eba400;
+    background: $dorian;
+  }
+  &:active,
+  .selected & {
+    background: $fireyellow;
   }
 
   &:before,
@@ -88,6 +103,7 @@
 
 .content {
   opacity: 0;
+  border-radius: 8px;
   transform: translateY(20px);
   transition: all ease-out 0.4s 0.1s;
 
@@ -102,11 +118,96 @@
 }
 
 .acc-card__p {
-  padding: 25px 30px 40px;
+  padding: 25px 30px 15px;
   background: $dorian;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   color: $slate;
+}
+
+.acc-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  list-style-position: inside;
+}
+
+.acc-card__p span {
+  font-weight: 700;
+}
+
+.acc-link {
+  background: linear-gradient(to bottom, $bluespruce 0%, $bluespruce 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: $onyx;
+  text-decoration: none;
+  transition: background-size 0.2s;
+  &:hover {
+    background-size: 4px 50px;
+  }
+}
+
+.acc-link-horizontal {
+  background: linear-gradient(
+    to right,
+    $bluespruce 0%,
+    $bluespruce 5px,
+    transparent 5px
+  );
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: $onyx;
+  padding-left: 1rem;
+  text-decoration: none;
+  &:hover {
+    background: linear-gradient(
+      to right,
+      $bluespruce 0%,
+      $bluespruce 5px,
+      transparent
+    );
+  }
+}
+
+.acc-link-min {
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: $bluespruce;
+  text-decoration: none;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    background: $fireyellow;
+  }
+}
+
+hr.hr-1 {
+  border: 0;
+  height: 1px;
+  background: $slate;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.space {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.acc-title {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+.underline {
+  border-bottom: 2px solid #ff9800;
+}
+.acc-no-bullet-list {
+  list-style: none;
+}
+
+.acc-no-bullet-list li {
+  margin-bottom: 1rem;
 }
 
 @keyframes close-line-one-out {
@@ -169,5 +270,22 @@
   }
   100% {
     transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 1102px) {
+  .acc-card__header {
+    font-size: 2rem;
+  }
+  .accordion {
+    height: 150vh;
+  }
+  .acc-card {
+    width: 100%;
+    display: block;
+    // height: 150vh;
+  }
+  .acc-col {
+    margin-left: 30%;
   }
 }
