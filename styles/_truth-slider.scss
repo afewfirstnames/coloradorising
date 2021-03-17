@@ -1,5 +1,6 @@
 .truth-slider {
   height: 100vh;
+  position: relative;
   h1 {
     text-align: center;
   }
@@ -8,7 +9,7 @@
   max-width: 1120px;
   margin: 50px auto;
   overflow: hidden;
-  border: 4px solid $dorian;
+  border: 2px solid $evergreen;
   border-radius: 8px;
   position: relative;
 }
@@ -23,26 +24,26 @@
   position: absolute;
   top: 50;
   z-index: 10;
-  left: 3rem;
+  left: 5rem;
   font-size: 4rem;
   color: $dorian;
   cursor: pointer;
   transition: all 0.35s ease-in-out;
   &:hover {
-    color: $fireyellow;
+    color: $evergreen;
   }
 }
 #nextBtn {
   position: absolute;
   top: 50;
   z-index: 10;
-  right: 3rem;
+  right: 5rem;
   font-size: 4rem;
   color: $dorian;
   cursor: pointer;
   transition: all 0.35s ease-in-out;
   &:hover {
-    color: $fireyellow;
+    color: $evergreen;
   }
 }
 

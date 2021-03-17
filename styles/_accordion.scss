@@ -4,9 +4,8 @@
   transition: height 0.5s;
 }
 
-// JUST TO STYLE THIS PEN
 .accordion {
-  height: 110vh;
+  height: 150vh;
 }
 
 .accordion .acc-main-header {
@@ -14,12 +13,12 @@
   width: 90%;
   margin: 0 auto;
 }
+
 .acc-card {
   width: 90vw;
-  height: 100vh;
-  margin: 50px auto;
-  border-radius: 2px;
-  background: none;
+  height: 80vh;
+  margin: 20px auto;
+  border-radius: 8px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -48,10 +47,13 @@
 .acc-card__header {
   max-width: 100%;
   width: 45.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   position: relative;
   background: $fireyellow;
   padding: 20px 10rem 20px 30px;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 5rem;
   color: $onyx;
   overflow: hidden;
@@ -245,6 +247,36 @@ hr.hr-1 {
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+hr.hr-2-blue {
+  border: 0;
+  height: 2px;
+  background: $slate;
+  margin-bottom: 6rem;
+  background-image: linear-gradient(to right, #333, $bluespruce, #333);
+}
+hr.hr-2-blue-bottom {
+  border: 0;
+  height: 2px;
+  background: $slate;
+  margin-top: 6rem;
+  background-image: linear-gradient(to right, #333, $bluespruce, #333);
+}
+
+hr.hr-2-green {
+  border: 0;
+  height: 2px;
+  background: $slate;
+  margin-bottom: 6rem;
+  background-image: linear-gradient(to right, #333, $evergreen, #333);
+}
+hr.hr-2-green-bottom {
+  border: 0;
+  height: 2px;
+  background: $slate;
+  margin-top: 6rem;
+  background-image: linear-gradient(to right, #333, $evergreen, #333);
+}
+
 .space {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -385,6 +417,14 @@ hr.hr-1 {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .accordion {
     height: 160vh;
+  }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .acc-card {
+    flex-direction: column;
   }
 }
 

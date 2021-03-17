@@ -1,13 +1,16 @@
 .stories {
   min-height: 100vh;
   width: 90%;
-  margin: 80px auto;
+  margin: 30rem auto;
   position: relative;
 }
 
 .stories h1 {
-  padding: 60px 0;
   text-align: center;
+}
+
+.hr-2-blue-bottom {
+  margin-bottom: 6rem;
 }
 
 .row {

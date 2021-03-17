@@ -1586,18 +1586,18 @@ article {
 }
 
 .map-header {
-  text-align: center;
-}
-
-.map-header h1 {
   margin-top: 30rem;
+  text-align: center;
 }
 
 .map-header h3 {
   display: block;
-  margin-bottom: 6rem;
   color: #ffc030;
   padding: 0 5rem;
+}
+
+.map-header .hr-2-green-bottom {
+  margin-bottom: 6rem;
 }
 
 /* PARENT */
@@ -1784,13 +1784,16 @@ article {
 .stories {
   min-height: 100vh;
   width: 90%;
-  margin: 80px auto;
+  margin: 30rem auto;
   position: relative;
 }
 
 .stories h1 {
-  padding: 60px 0;
   text-align: center;
+}
+
+.hr-2-blue-bottom {
+  margin-bottom: 6rem;
 }
 
 .row {
@@ -1966,7 +1969,7 @@ video:focus {
 }
 
 .news-truth-rising {
-  height: 80vh;
+  height: 100vh;
 }
 
 /* NEWS SLIDER */
@@ -2013,7 +2016,7 @@ video:focus {
 }
 
 .next:hover {
-  color: #ffc030;
+  color: #5dbbef;
 }
 
 .prev {
@@ -2028,7 +2031,7 @@ video:focus {
 }
 
 .prev:hover {
-  color: #ffc030;
+  color: #5dbbef;
 }
 
 .slider-image {
@@ -2196,7 +2199,7 @@ video:focus {
 }
 
 .accordion {
-  height: 110vh;
+  height: 150vh;
 }
 
 .accordion .acc-main-header {
@@ -2207,10 +2210,9 @@ video:focus {
 
 .acc-card {
   width: 90vw;
-  height: 100vh;
-  margin: 50px auto;
-  border-radius: 2px;
-  background: none;
+  height: 80vh;
+  margin: 20px auto;
+  border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2249,10 +2251,19 @@ video:focus {
 .acc-card__header {
   max-width: 100%;
   width: 45.55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
   background: #ffc030;
   padding: 20px 10rem 20px 30px;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 5rem;
   color: #061a24;
   overflow: hidden;
@@ -2446,6 +2457,42 @@ hr.hr-1 {
   background: #1f272a;
   background-image: -webkit-gradient(linear, left top, right top, from(#ccc), color-stop(#333), to(#ccc));
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+hr.hr-2-blue {
+  border: 0;
+  height: 2px;
+  background: #1f272a;
+  margin-bottom: 6rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), color-stop(#5dbbef), to(#333));
+  background-image: linear-gradient(to right, #333, #5dbbef, #333);
+}
+
+hr.hr-2-blue-bottom {
+  border: 0;
+  height: 2px;
+  background: #1f272a;
+  margin-top: 6rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), color-stop(#5dbbef), to(#333));
+  background-image: linear-gradient(to right, #333, #5dbbef, #333);
+}
+
+hr.hr-2-green {
+  border: 0;
+  height: 2px;
+  background: #1f272a;
+  margin-bottom: 6rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), color-stop(#5def80), to(#333));
+  background-image: linear-gradient(to right, #333, #5def80, #333);
+}
+
+hr.hr-2-green-bottom {
+  border: 0;
+  height: 2px;
+  background: #1f272a;
+  margin-top: 6rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), color-stop(#5def80), to(#333));
+  background-image: linear-gradient(to right, #333, #5def80, #333);
 }
 
 .space {
@@ -2687,6 +2734,17 @@ hr.hr-1 {
   }
 }
 
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .acc-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -2813,6 +2871,7 @@ hr.hr-1 {
 
 .truth-slider {
   height: 100vh;
+  position: relative;
 }
 
 .truth-slider h1 {
@@ -2823,7 +2882,7 @@ hr.hr-1 {
   max-width: 1120px;
   margin: 50px auto;
   overflow: hidden;
-  border: 4px solid #ecf1f4;
+  border: 2px solid #5def80;
   border-radius: 8px;
   position: relative;
 }
@@ -2840,7 +2899,7 @@ hr.hr-1 {
   position: absolute;
   top: 50;
   z-index: 10;
-  left: 3rem;
+  left: 5rem;
   font-size: 4rem;
   color: #ecf1f4;
   cursor: pointer;
@@ -2849,14 +2908,14 @@ hr.hr-1 {
 }
 
 #prevBtn:hover {
-  color: #ffc030;
+  color: #5def80;
 }
 
 #nextBtn {
   position: absolute;
   top: 50;
   z-index: 10;
-  right: 3rem;
+  right: 5rem;
   font-size: 4rem;
   color: #ecf1f4;
   cursor: pointer;
@@ -2865,7 +2924,7 @@ hr.hr-1 {
 }
 
 #nextBtn:hover {
-  color: #ffc030;
+  color: #5def80;
 }
 
 /* FOOTER */
@@ -3136,6 +3195,10 @@ hr.hr-1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.po-box {
+  padding-right: 3rem;
 }
 
 @media screen and (max-width: 900px) {

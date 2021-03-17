@@ -4,15 +4,16 @@
 }
 
 .map-header {
+  margin-top: 30rem;
   text-align: center;
-  h1 {
-    margin-top: 30rem;
-  }
   h3 {
     display: block;
-    margin-bottom: 6rem;
+    // margin-bottom: 6rem;
     color: $fireyellow;
     padding: 0 5rem;
+  }
+  .hr-2-green-bottom {
+    margin-bottom: 6rem;
   }
 }
 
