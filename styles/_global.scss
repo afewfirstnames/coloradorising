@@ -96,13 +96,20 @@ h6 {
 }
 
 .btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 700;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
   background-color: none;
-  color: $cloud;
-  border: solid 2px $cloud;
+  border: 2px solid $onyx;
   border-radius: 8px;
-  padding: 1rem 1.5rem;
+  color: $onyx;
+  padding: 1.5rem 1.8rem;
+  margin-top: 2rem;
   transition: background 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .btn:hover {
