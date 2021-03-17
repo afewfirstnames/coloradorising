@@ -236,15 +236,13 @@
   }
 }
 @media screen and (max-width: 414px) {
-  .footer-row {
-    flex-direction: column;
-    margin: auto;
-  }
   .footer-col {
-    width: 50%;
-    margin: 30px auto 0 auto;
+    width: 100%;
   }
-  #footer-logo {
-    width: 175px;
+  .footer-logo {
+    order: 1;
+  }
+  .footer-cta-container {
+    padding: 1rem;
   }
 }

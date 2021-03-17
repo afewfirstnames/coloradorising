@@ -3170,19 +3170,16 @@ hr.hr-1 {
 }
 
 @media screen and (max-width: 414px) {
-  .footer-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-  }
   .footer-col {
-    width: 50%;
-    margin: 30px auto 0 auto;
+    width: 100%;
   }
-  #footer-logo {
-    width: 175px;
+  .footer-logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer-cta-container {
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
