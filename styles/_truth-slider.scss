@@ -22,7 +22,7 @@
 
 #prevBtn {
   position: absolute;
-  top: 50;
+  top: 50%;
   z-index: 10;
   left: 5rem;
   font-size: 4rem;
@@ -30,12 +30,12 @@
   cursor: pointer;
   transition: all 0.35s ease-in-out;
   &:hover {
-    color: $evergreen;
+    color: $bluespruce;
   }
 }
 #nextBtn {
   position: absolute;
-  top: 50;
+  top: 50%;
   z-index: 10;
   right: 5rem;
   font-size: 4rem;
@@ -43,14 +43,180 @@
   cursor: pointer;
   transition: all 0.35s ease-in-out;
   &:hover {
-    color: $evergreen;
+    color: $bluespruce;
   }
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .truth-slider {
     height: 150vh;
+    display: none;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 568px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .truth-slider {
+    height: 150vh;
+    display: none;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+/* Landscape */
+@media only screen and (min-device-width: 812px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .truth-slider {
+    height: 150vh;
+    display: none;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 896px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .truth-slider {
+    height: 150vh;
+    display: none;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 846px) and (max-device-width: 846px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .truth-slider {
+    height: 150vh;
+    display: none;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 740px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .truth-slider {
+    height: 150vh;
+    display: none;
+  }
+}
+
+/* GOT RID OF NEWS AND VIDEO SLIDER FOR LG PHONES */
+/* Landscape */
+@media only screen and (min-device-width: 640px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+  .truth-slider {
+    height: 150vh;
+    display: none;
+  }
+  .news-truth-rising {
+    display: none;
+  }
+}
+
+/* ----------- Nexus 5X ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .acc-main-header {
+    font-size: 4rem;
+  }
+  .accordion {
+    height: 200vh;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 732px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .truth-slider {
+    height: 150vh;
+    display: none;
+  }
+  .news-truth-rising {
+    display: none;
+  }
+  .accordion {
+    height: 400vh;
+  }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .carousel-container {
+    width: 560px;
+  }
+  .truth-slider {
+    height: 80vh;
+  }
+  #prevBtn {
+    z-index: 10;
+    left: 3rem;
+    top: 43%;
+  }
+  #nextBtn {
+    z-index: 10;
+    right: 3rem;
+    top: 43%;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #prevBtn {
+    color: $bluespruce;
+  }
+  #nextBtn {
+    color: $bluespruce;
+  }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .carousel-container {
+    width: 560px;
+  }
+  .truth-slider {
+    height: 80vh;
+  }
+  #prevBtn {
+    z-index: 10;
+    left: 3rem;
+    top: 43%;
+  }
+  #nextBtn {
+    z-index: 10;
+    right: 3rem;
+    top: 43%;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  #prevBtn {
+    color: $bluespruce;
+  }
+  #nextBtn {
+    color: $bluespruce;
+  }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .carousel-container {
+    width: 560px;
+  }
+  .truth-slider {
+    height: 60vh;
+  }
+  #prevBtn {
+    color: $onyx;
+  }
+  #nextBtn {
+    color: $onyx;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  #prevBtn {
+    color: $onyx;
+  }
+  #nextBtn {
+    color: $onyx;
   }
 }
