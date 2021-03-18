@@ -16,7 +16,7 @@
 .row {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -140,14 +140,42 @@ video:focus {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .stories-header {
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .stories {
     width: 90%;
     margin: 20rem auto 0 auto;
     h1 {
-      font-size: 8vw;
+      font-size: 6vw;
       padding: 0 2rem;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .stories {
+    width: 90%;
+    margin: 20rem auto 0 auto;
+    h1 {
+      font-size: 6vw;
+      padding: 0 2rem;
+    }
+  }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .stories {
+    margin: 0 auto;
+    height: 20vh;
   }
 }
 

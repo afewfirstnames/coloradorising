@@ -114,7 +114,6 @@
 @media (max-width: 785px) {
   .card {
     display: block;
-    // max-height: 700px;
   }
   .card-photo {
     width: 100%;
@@ -146,6 +145,7 @@
   .main-header {
     h1 {
       font-size: 4rem;
+      padding-top: 1rem;
     }
   }
 }

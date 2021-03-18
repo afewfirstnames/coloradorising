@@ -360,10 +360,16 @@ hr.hr-2-green-bottom {
     transform: rotate(90deg);
   }
 }
-
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .accordion {
+    height: 100vh;
+  }
+}
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .accordion {
     height: 260vh;
   }
@@ -386,11 +392,10 @@ hr.hr-2-green-bottom {
     margin: 0 auto;
   }
 }
-
-/* Portrait */
-@media screen and (min-device-width: 384px) and (min-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+/* Landscape */
+@media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .accordion {
-    height: 260vh;
+    height: 450vh;
   }
   .acc-main-header {
     font-size: 3rem;
@@ -409,30 +414,14 @@ hr.hr-2-green-bottom {
   }
   .acc-card {
     margin: 0 auto;
-  }
-}
-
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .accordion {
-    height: 160vh;
-  }
-}
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .acc-card {
-    flex-direction: column;
   }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .accordion {
-    height: 260vh;
+    height: 240vh;
   }
   .acc-main-header {
     font-size: 3rem;
@@ -455,9 +444,9 @@ hr.hr-2-green-bottom {
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .accordion {
-    height: 450vh;
+    height: 400vh;
   }
   .acc-main-header {
     font-size: 4rem;
@@ -473,16 +462,16 @@ hr.hr-2-green-bottom {
   }
 }
 
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+// /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+// /* Portrait */
+@media only screen and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .accordion {
     height: 220vh;
   }
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .accordion {
     height: 370vh;
   }
@@ -501,8 +490,15 @@ hr.hr-2-green-bottom {
 }
 
 /* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen and (max-device-width: 375px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .accordion {
+    height: 200vh;
+  }
+}
+
 /* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .accordion {
     height: 390vh;
   }
@@ -520,16 +516,21 @@ hr.hr-2-green-bottom {
   }
 }
 
+/* ----------- iPhone XR ----------- */
 /* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .accordion {
-    height: 210vh;
+    height: 200vh;
+  }
+  .acc-main-header {
+    font-size: 4rem;
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+/* Landscape */
+@media only screen and (max-device-width: 896px) and (min-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .accordion {
-    height: 390vh;
+    height: 250vh;
   }
   .acc-main-header {
     font-size: 4rem;
@@ -542,12 +543,5 @@ hr.hr-2-green-bottom {
   }
   .acc-card__header {
     font-size: 2rem;
-  }
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
-  .accordion {
-    height: 220vh;
   }
 }
