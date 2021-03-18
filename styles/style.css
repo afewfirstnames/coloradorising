@@ -3739,4 +3739,19 @@ hr.hr-2-white {
   width: 100%;
   max-width: 300px;
 }
+
+/* INFO GRAPHIC */
+.info-graphic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.our-work-infographic {
+  width: 100%;
+  bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
