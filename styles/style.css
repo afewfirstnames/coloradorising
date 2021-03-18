@@ -2892,6 +2892,7 @@ hr.hr-2-green-bottom {
 
 .truth-slider {
   height: 100vh;
+  position: relative;
 }
 
 .truth-slider h1 {
