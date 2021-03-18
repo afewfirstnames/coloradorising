@@ -3614,7 +3614,7 @@ hr.hr-2-yellow-bottom {
 }
 
 .our-work-main-wrapper {
-  height: 210vh;
+  height: 200vh;
 }
 
 .our-work-main-wrapper {
@@ -3748,6 +3748,7 @@ hr.hr-2-white {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 150vh;
 }
 
 .our-work-infographic {
