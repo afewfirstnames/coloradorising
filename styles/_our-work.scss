@@ -1,0 +1,103 @@
+.ow-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url("/our_work/images/our-work-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-work-main-wrapper {
+  height: 210vh;
+}
+
+.our-work-main-wrapper {
+  text-align: center;
+  position: relative;
+  h3 {
+    position: absolute;
+    padding: 10rem 15rem;
+  }
+}
+
+.h3-replacement-yellow {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $fireyellow;
+}
+
+.h3-replacement {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+
+/* JUSTICE RISING */
+.justice-rising-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.justice-rising-img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.justice-rising-col {
+  max-width: 400px;
+  width: 100%;
+}
+
+.justice-rising-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  text-align: left;
+  padding: 2rem 0;
+  p {
+    margin: 1rem 0;
+  }
+}
+
+.justice-rising-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  text-align: left;
+  a {
+    margin: 1rem 0;
+  }
+}
+
+hr.hr-2-white {
+  border: 0;
+  height: 2px;
+  background: $slate;
+  margin-top: 20rem;
+  background-image: linear-gradient(to right, #333, $cloud, #333);
+}
+
+.justice-rising-row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.redi-img {
+  width: 100%;
+  max-width: 300px;
+}
