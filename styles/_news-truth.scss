@@ -9,6 +9,7 @@
 }
 
 .news-slider {
+  margin-top: 6rem;
   position: relative;
   display: flex;
 }
@@ -75,9 +76,6 @@
   align-items: flex-start;
   padding: 0 1rem;
   font-family: "Roboto", sans-serif;
-  // h5 {
-  //   margin: 5px;
-  // }
 }
 
 .author-cal-wrapper {
@@ -100,16 +98,43 @@
   color: $slate;
 }
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 /* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .news-truth-rising {
+    height: 150vh;
+  }
   .slider-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  .next {
+    right: 0.5rem;
+  }
+  .prev {
+    left: 0.5rem;
   }
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-device-width: 568px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .news-truth-rising {
+    height: 200vh;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .slider-title {
+    font-size: 4rem;
+  }
+  .news-truth-rising {
+    height: 100vh;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 667px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .link-dark {
     font-size: 1.3rem;
   }
@@ -125,6 +150,9 @@
   }
   .prev {
     left: 3rem;
+  }
+  .news-truth-rising {
+    height: 175vh;
   }
   .slider-title {
     font-size: 4rem;
@@ -132,8 +160,14 @@
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .news-truth-rising {
+    height: 100vh;
+  }
+}
 /* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-width: 736px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .link-dark {
     font-size: 1.3rem;
   }
@@ -149,12 +183,15 @@
   }
   .prev {
     left: 3rem;
+  }
+  .news-truth-rising {
+    height: 175vh;
   }
 }
 
 /* ----------- iPhone X ----------- */
 /* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-width: 812px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .link-dark {
     font-size: 1.3rem;
   }
@@ -170,20 +207,24 @@
   }
   .prev {
     left: 3rem;
+  }
+  .news-truth-rising {
+    height: 175vh;
+  }
+}
+
+/* ----------- iPhone XR ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .slider-title {
+    font-size: 4.5rem;
   }
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .link-dark {
-    font-size: 1.3rem;
-  }
-  .post-info {
-    padding: 0 0.3rem;
-  }
-  .fa-user,
-  .fa-calendar {
-    font-size: 1.2rem;
+@media only screen and (min-device-width: 896px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .news-truth-rising {
+    height: 175vh;
   }
   .next {
     right: 3rem;
@@ -193,6 +234,42 @@
   }
 }
 
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* Landscape */
+@media screen and (min-device-width: 640px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .news-truth-rising {
+    height: 200vh;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+}
+/* Landscape */
+@media screen and (min-device-width: 740px) and (max-device-height: 740px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+  .news-truth-rising {
+    height: 200vh;
+  }
+  .next {
+    right: 3rem;
+  }
+  .prev {
+    left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 411px) {
+  .news-truth-rising {
+    height: 200vh;
+  }
+}
+@media only screen and (min-width: 731px) and (max-width: 731px) {
+  .news-truth-rising {
+    height: 200vh;
+  }
+}
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -202,10 +279,31 @@
   .prev {
     left: 3rem;
   }
+  .slider-title {
+    font-size: 6.4rem;
+  }
 }
 
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .slider-title {
+    font-size: 6.4rem;
+  }
+  .news-truth-rising {
+    height: 70vh;
+  }
+}
 @media screen and (max-width: 600px) {
   .link-dark {
     font-size: 1.4rem;
+  }
+}
+
+// /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+// /* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .news-truth-rising {
+    height: 70vh;
   }
 }
