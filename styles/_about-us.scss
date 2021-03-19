@@ -206,19 +206,18 @@ hr.hr-2-about {
   border-radius: 8px 8px 0 0;
   margin-bottom: 2rem;
 }
-.col-1 {
-  background-color: #96858f;
-}
 .col-2 {
   background-color: $dorian;
   border-radius: 8px 8px 8px 8px;
   width: 50%;
+  max-width: 700px;
   margin: 10rem auto;
 }
 .col-3 {
   background-color: $dorian;
   border-radius: 8px 8px 8px 8px;
   width: 50%;
+  max-width: 700px;
   margin: 10rem auto;
 }
 

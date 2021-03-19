@@ -4442,14 +4442,11 @@ hr.hr-2-about {
   margin-bottom: 2rem;
 }
 
-.col-1 {
-  background-color: #96858f;
-}
-
 .col-2 {
   background-color: #ecf1f4;
   border-radius: 8px 8px 8px 8px;
   width: 50%;
+  max-width: 700px;
   margin: 10rem auto;
 }
 
@@ -4457,6 +4454,7 @@ hr.hr-2-about {
   background-color: #ecf1f4;
   border-radius: 8px 8px 8px 8px;
   width: 50%;
+  max-width: 700px;
   margin: 10rem auto;
 }
 
