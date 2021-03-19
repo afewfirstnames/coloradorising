@@ -1,6 +1,6 @@
 .ow-header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
-    url("/our_work/images/our-work-header.jpg");
+    url("/our-work/images/our-work-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
@@ -245,11 +245,11 @@ hr.hr-2-white {
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .info-graphic {
+  .info-grafphic {
     height: 100vh;
   }
   .our-work-main-wrapper {
-    height: 150vh;
+    height: 1532ol0vh;
   }
 }
 
