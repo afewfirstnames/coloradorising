@@ -4575,8 +4575,8 @@ hr.hr-2-about {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73%);
   border-radius: 8px 8px 0 0;
 }
 
