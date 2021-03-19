@@ -131,6 +131,91 @@ hr.hr-2-white {
   }
 }
 
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .ow-header {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .justice-rising-row {
+    flex-direction: column;
+  }
+  .justice-rising-row-2 {
+    flex-direction: column;
+  }
+  .info-graphic {
+    height: 200vh;
+  }
+  .our-work-main-wrapper {
+    height: 350vh;
+  }
+  .our-work-main-wrapper {
+    h3 {
+      padding: 1rem 1rem;
+      font-size: 1.8rem;
+    }
+  }
+  .justice-rising-img {
+    margin-top: 10rem;
+  }
+  .justice-rising-info {
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .justice-rising-links {
+    align-items: center;
+  }
+  .redi-img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 568px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .justice-rising-row {
+    flex-direction: column;
+  }
+  .ow-header {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .justice-rising-row-2 {
+    flex-direction: column;
+  }
+  .info-graphic {
+    height: 300vh;
+  }
+  .our-work-main-wrapper {
+    height: 650vh;
+  }
+  .our-work-main-wrapper {
+    h3 {
+      padding: 2rem 2rem;
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-img {
+    margin-top: 10rem;
+  }
+  .justice-rising-info {
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .justice-rising-links {
+    align-items: center;
+  }
+  .redi-img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 /* ----------- iPad Pro 12.9" ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -177,7 +262,187 @@ hr.hr-2-white {
     height: 100vh;
   }
   .our-work-main-wrapper {
+    height: 350vh;
+  }
+  .our-work-main-wrapper {
+    h3 {
+      padding: 2rem 2rem;
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-img {
+    margin-top: 10rem;
+  }
+  .justice-rising-info {
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .justice-rising-links {
+    align-items: center;
+  }
+  .redi-img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .justice-rising-row {
+    flex-direction: column;
+  }
+  .ow-header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-row-2 {
+    flex-direction: column;
+  }
+  .info-graphic {
     height: 400vh;
+  }
+  .our-work-main-wrapper {
+    height: 450vh;
+  }
+  .our-work-main-wrapper {
+    h3 {
+      padding: 2rem 2rem;
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-img {
+    margin-top: 10rem;
+  }
+  .justice-rising-info {
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .justice-rising-links {
+    align-items: center;
+  }
+  .redi-img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .justice-rising-row {
+    flex-direction: column;
+  }
+  .ow-header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-row-2 {
+    flex-direction: column;
+  }
+  .info-graphic {
+    height: 400vh;
+  }
+  .our-work-main-wrapper {
+    height: 450vh;
+  }
+  .our-work-main-wrapper {
+    h3 {
+      padding: 2rem 2rem;
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-img {
+    margin-top: 10rem;
+  }
+  .justice-rising-info {
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .justice-rising-links {
+    align-items: center;
+  }
+  .redi-img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .our-work-main-wrapper {
+    height: 300vh;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .justice-rising-row {
+    flex-direction: column;
+  }
+  .ow-header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-row-2 {
+    flex-direction: column;
+  }
+  .info-graphic {
+    height: 400vh;
+  }
+  .our-work-main-wrapper {
+    height: 450vh;
+  }
+  .our-work-main-wrapper {
+    h3 {
+      padding: 2rem 2rem;
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-img {
+    margin-top: 10rem;
+  }
+  .justice-rising-info {
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .justice-rising-links {
+    align-items: center;
+  }
+  .redi-img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ----------- iPhone XR ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .our-work-main-wrapper {
+    height: 250vh;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 896px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .justice-rising-row {
+    flex-direction: column;
+  }
+  .ow-header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .justice-rising-row-2 {
+    flex-direction: column;
+  }
+  .info-graphic {
+    height: 400vh;
+  }
+  .our-work-main-wrapper {
+    height: 450vh;
   }
   .our-work-main-wrapper {
     h3 {
