@@ -1,0 +1,41 @@
+.about-us-header {
+  height: 90vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url("/about-us/images/about-us-header");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: $cloud;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  h4 {
+    max-width: 950px;
+    line-height: 3.2rem;
+    font-weight: 500;
+    padding-bottom: 8rem;
+  }
+}
+
+.board-card-wrapper {
+  height: 100vh;
+}
+
+hr.hr-2-about {
+  border: 0;
+  height: 6px;
+  width: 15%;
+  background: $slate;
+  margin-top: 2rem;
+  border-radius: 3px;
+  margin-bottom: 4rem;
+  background-image: linear-gradient(
+    to right,
+    $evergreen,
+    $evergreen,
+    $evergreen
+  );
+}

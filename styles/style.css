@@ -4171,4 +4171,52 @@ hr.hr-2-white {
     margin-bottom: 2rem;
   }
 }
+
+.about-us-header {
+  height: 90vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent)), url("/about-us/images/about-us-header");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent), url("/about-us/images/about-us-header");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: #fafcfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.about-us-header h4 {
+  max-width: 950px;
+  line-height: 3.2rem;
+  font-weight: 500;
+  padding-bottom: 8rem;
+}
+
+.board-card-wrapper {
+  height: 100vh;
+}
+
+hr.hr-2-about {
+  border: 0;
+  height: 6px;
+  width: 15%;
+  background: #1f272a;
+  margin-top: 2rem;
+  border-radius: 3px;
+  margin-bottom: 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5def80), color-stop(#5def80), to(#5def80));
+  background-image: linear-gradient(to right, #5def80, #5def80, #5def80);
+}
 /*# sourceMappingURL=style.css.map */
