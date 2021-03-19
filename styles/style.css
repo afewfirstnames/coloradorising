@@ -3619,12 +3619,16 @@ hr.hr-2-yellow-bottom {
 
 .our-work-main-wrapper {
   text-align: center;
-  position: relative;
 }
 
-.our-work-main-wrapper h3 {
-  position: absolute;
-  padding: 10rem 15rem;
+.our-work-fade {
+  position: relative;
+  max-height: 150px;
+}
+
+.justice-rising-header {
+  margin: 5rem auto;
+  max-width: 900px;
 }
 
 .h3-replacement-yellow {
@@ -3793,7 +3797,7 @@ hr.hr-2-white {
             flex-direction: column;
   }
   .info-graphic {
-    height: 200vh;
+    height: 250vh;
   }
   .our-work-main-wrapper {
     height: 350vh;
@@ -3841,10 +3845,10 @@ hr.hr-2-white {
             flex-direction: column;
   }
   .info-graphic {
-    height: 300vh;
+    height: 450vh;
   }
   .our-work-main-wrapper {
-    height: 650vh;
+    height: 800vh;
   }
   .our-work-main-wrapper h3 {
     padding: 2rem 2rem;
@@ -3900,7 +3904,7 @@ hr.hr-2-white {
     height: 100vh;
   }
   .our-work-main-wrapper {
-    height: 120vh;
+    height: 150vh;
   }
 }
 
@@ -3920,7 +3924,7 @@ hr.hr-2-white {
             flex-direction: column;
   }
   .info-graphic {
-    height: 100vh;
+    height: 175vh;
   }
   .our-work-main-wrapper {
     height: 350vh;
@@ -3968,7 +3972,7 @@ hr.hr-2-white {
             flex-direction: column;
   }
   .info-graphic {
-    height: 400vh;
+    height: 475vh;
   }
   .our-work-main-wrapper {
     height: 450vh;
@@ -4046,6 +4050,17 @@ hr.hr-2-white {
   }
 }
 
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .info-graphic {
+    height: 225vh;
+  }
+  .our-work-main-wrapper {
+    height: 400vh;
+  }
+}
+
 /* ----------- iPhone X ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
@@ -4075,7 +4090,7 @@ hr.hr-2-white {
     height: 400vh;
   }
   .our-work-main-wrapper {
-    height: 450vh;
+    height: 550vh;
   }
   .our-work-main-wrapper h3 {
     padding: 2rem 2rem;
