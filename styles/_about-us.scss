@@ -71,7 +71,6 @@ hr.hr-2-about {
 
 .board-card {
   width: 40rem;
-  //   height: 75rem;
   background: $dorian;
   color: $onyx;
   border-radius: 8px;
@@ -238,6 +237,48 @@ hr.hr-2-about {
   bottom: -2rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* BUTTONS */
+.about-buttons-wrapper {
+  height: 50vh;
+}
+.about-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20rem;
+}
+.button-text-wrapper {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  border: 6px solid $bluespruce;
+  border-radius: 8px;
+  padding: 3rem;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    background: $bluespruce;
+    transform: translateY(-2px);
+  }
+  p {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+}
+.about-button {
+  max-width: 150px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.about-button-lrg {
+  max-width: 110px;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 500px) {
