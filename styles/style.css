@@ -3654,8 +3654,6 @@ hr.hr-2-yellow-bottom {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .justice-rising-img {
@@ -3664,6 +3662,20 @@ hr.hr-2-yellow-bottom {
 }
 
 .justice-rising-col {
+  max-width: 400px;
+  width: 100%;
+}
+
+.justice-rising-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   max-width: 400px;
   width: 100%;
 }
@@ -3730,8 +3742,6 @@ hr.hr-2-white {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 5rem;
 }
 
@@ -3754,5 +3764,92 @@ hr.hr-2-white {
 .our-work-infographic {
   width: 100%;
   bottom: 0;
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .our-work-main-wrapper h3 {
+    padding: 4rem 4rem;
+  }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .info-graphic {
+    height: 100vh;
+  }
+  .our-work-main-wrapper {
+    height: 100vh;
+  }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .info-graphic {
+    height: 100vh;
+  }
+  .our-work-main-wrapper {
+    height: 100vh;
+  }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .info-graphic {
+    height: 100vh;
+  }
+  .our-work-main-wrapper {
+    height: 120vh;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .justice-rising-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .justice-rising-row-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-graphic {
+    height: 100vh;
+  }
+  .our-work-main-wrapper {
+    height: 400vh;
+  }
+  .our-work-main-wrapper h3 {
+    padding: 2rem 2rem;
+    font-size: 2rem;
+  }
+  .justice-rising-img {
+    margin-top: 10rem;
+  }
+  .justice-rising-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .justice-rising-links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .redi-img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
