@@ -4700,7 +4700,7 @@ hr.hr-2-about {
 }
 
 .donate-header {
-  margin-top: 20rem;
+  margin-top: 15rem;
 }
 
 .donate-header h2 {
@@ -4725,7 +4725,7 @@ hr.hr-2-about {
   line-height: 1.5;
   color: #061a24;
   margin-top: 5rem;
-  background: #ecf1f4c0;
+  background: #ecf1f4d3;
   border-radius: 8px;
   padding: 2rem 3.5rem;
   max-width: 600px;
@@ -4821,5 +4821,34 @@ hr.hr-2-about {
 
 .donation-form__item {
   padding: 1rem;
+}
+
+.payment-info-btn {
+  text-align: center;
+}
+
+.more-ways-to-give-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: #061a24;
+  margin-top: 5rem;
+  background: #ecf1f4d3;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  max-width: 350px;
+  -webkit-box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25), -15px 15px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25), -15px 15px 25px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=style.css.map */

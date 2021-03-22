@@ -15,7 +15,7 @@
 }
 
 .donate-header {
-  margin-top: 20rem;
+  margin-top: 15rem;
   h2 {
     margin-top: 2rem;
   }
@@ -32,7 +32,7 @@
   line-height: 1.5;
   color: $onyx;
   margin-top: 5rem;
-  background: #ecf1f4c0;
+  background: #ecf1f4d3;
   border-radius: 8px;
   padding: 2rem 3.5rem;
   max-width: 600px;
@@ -104,4 +104,26 @@
 
 .donation-form__item {
   padding: 1rem;
+}
+
+.payment-info-btn {
+  text-align: center;
+}
+
+.more-ways-to-give-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: $onyx;
+  margin-top: 5rem;
+  background: #ecf1f4d3;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  max-width: 350px;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25),
+    -15px 15px 25px rgba(0, 0, 0, 0.25);
 }
