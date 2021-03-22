@@ -1,0 +1,30 @@
+.volunteer-header {
+  height: 90vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url("/volunteer/images/volunteer-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: $cloud;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.volunteer-form-wrapper {
+  height: 100vh;
+}
+
+.volunteer-subheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  h3 {
+    max-width: 800px;
+  }
+}

@@ -18,7 +18,7 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <title>Donate</title>
+    <title>Volunteer</title>
 </head>
 
 <body>
@@ -71,44 +71,20 @@
     <!-- END NAV BAR -->
 
     <main>
-        <section class="donate-wrapper">
-            <header class="donate-header">
-                <h1>Protect Colorado</h1>
-                <h2>Donate now to keep our water, air, and climate safe.</h2>
-            </header>
-            <!--FORM START-->
-            <div class="donation-container">
-                <form class="donation-form" id="donation-form" action="./" method="POST">
-                    <div class="donation-form__title">Choose an amount to give</div>
-                    <div class="donation-form__item doante-amounts">
-                        <button type="button" class="donation-form__btn">$35</button>
-                        <button type="button" class="donation-form__btn">$50</button>
-                        <button type="button" class="donation-form__btn">$100</button>
-                        <button type="button" class="donation-form__btn">$250</button>
-                        <button type="button" class="donation-form__btn">$500</button>
-                        <input id="other-donation" class="donation-form__input" name="other-donation" type="text"
-                            placeholder="Other Amount">
-                    </div>
-                    <div class="donation-form__item">
-                        <input name="donation-frequency" type="radio" id="one-time"
-                            class="donation-form__input-radio" /> One-time
-                        <input name="donation-frequency" type="radio" id="monthly" class="donation-form__input-radio" />
-                        Monthly
-                    </div>
-                    <div class="donation-form__item">
-                        <button class="donation-form__btn payment-info-btn" type="submit" id="submit"><i
-                                class="fas fa-lock"></i> Enter
-                            Payment Info</button>
-                        <p class="donation-info">Colorado Rising For Communities Council is a tax-exempt 501(c)3
-                            organization. Contributions
-                            to Colorado Rising For Communities are tax-deductible to the fullest extent of the law.</p>
-                    </div>
-                </form>
-            </div>
-            <div class="more-ways-to-give-wrapper">
-                <button class="donation-form__btn ">More Ways To Give</button>
-            </div>
-            <!--FORM END-->
+        <!-- HEADER -->
+        <header class="volunteer-header">
+            <h1>Volunteer</h1>
+            <h3>Join Us To Help Protect Colorado's Communities!</h3>
+        </header>
+        <!-- END HEADER -->
+
+        <div class="volunteer-subheader">
+            <img src="/images/Fade.png" alt="" id="fade" class="our-work-fade">
+            <h3>To join us, please complete the form below and indicate your interests. We will be in touch!</h3>
+        </div>
+
+        <section class="volunteer-form-wrapper">
+
         </section>
     </main>
 
@@ -157,7 +133,6 @@
         </div>
     </footer>
     <!-- END FOOTER -->
-
 </body>
 
 </html>
