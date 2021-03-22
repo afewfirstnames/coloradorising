@@ -84,7 +84,121 @@
         </div>
 
         <section class="volunteer-form-wrapper">
-
+            <form action="#" method="POST" class="volunteer-form">
+                <div class="volunteer-title">
+                    Volunteer Registration
+                </div>
+                <div class="volunteer-details">
+                    <div class="volunteer-form__info">
+                        <label for="first-name" class="volunteer-form__label">First Name</label>
+                        <input type="text" class="volunteer-form__input" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="volunteer-form__info">
+                        <label for="last-name" class="volunteer-form__label">Last Name</label>
+                        <input type="text" class="volunteer-form__input" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="volunteer-form__info">
+                        <label for="address" class="volunteer-form__label">Street Address (Optional)</label>
+                        <input type="text" class="volunteer-form__input" name="address" id="address">
+                    </div>
+                    <div class="volunteer-form__info">
+                        <label for="zip" class="volunteer-form__label">Zip Code</label>
+                        <input type="text" class="volunteer-form__input" pattern="[0-9]*" name="zip" id="zip">
+                    </div>
+                    <div class="volunteer-form__info">
+                        <label for="city" class="volunteer-form__label">City</label>
+                        <input type="text" class="volunteer-form__input" name="city" id="city">
+                    </div>
+                    <div class="volunteer-form__info">
+                        <label for="state" class="volunteer-form__label">State</label>
+                        <input type="text" class="volunteer-form__input" name="state" id="state">
+                    </div>
+                    <div class="volunteer-form__info">
+                        <label for="email" class="volunteer-form__label">Email</label>
+                        <input type="email" class="volunteer-form__input" name="email" id="email"
+                            placeholder="email@email.com" required>
+                    </div>
+                    <div class="volunteer-form__info">
+                        <label for="home-phone" class="volunteer-form__label">Home Phone</label>
+                        <input type="tel" class="volunteer-form__input" name="home-phone" id="home-phone"
+                            placeholder="555-555-5555" required>
+                    </div>
+                    <div class="volunteer-form__info">
+                        <label for="phone" class="volunteer-form__label">Mobile Phone</label>
+                        <input type="tel" class="volunteer-form__input" name="phone" id="phone"
+                            placeholder="555-555-5555">
+                    </div>
+                </div>
+                <div class="email-text-wrapper">
+                    <div class="text-email-agreement">
+                        <input type="checkbox" class="volunteer-form__input" name="text-agreement" value="yes-text">
+                        <label for="text-agreement" class="volunteer-form__label">Can we text
+                            you?</label>
+                    </div>
+                    <p>By submitting your cell phone number you are agreeing to receive periodic text messages from
+                        this organization. Message and data rates may apply. Text HELP for more information. Text
+                        STOP to stop receiving messages.</p>
+                    <div class="text-email-agreement">
+                        <input type="checkbox" class="volunteer-form__input" name="email-agreement" value="yes-email">
+                        <label for="email-agreement" class="volunteer-form__label">Can we email
+                            you?</label>
+                    </div>
+                </div>
+                <div class="volunteer-interests">
+                    <h5 class="volunteer-subtitle">There are many ways to help, please let us know about your volunteer
+                        interests.</h5>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="general-volunteer"
+                            value="General Volunteer">
+                        <label for="general-volunteer" class="volunteer-form__label">Be a general volunteer</label>
+                    </div>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="calls-volunteers"
+                            value="Make calls to volunteers & supporters">
+                        <label for="calls-volunteers" class="volunteer-form__label">Make calls to volunteers &
+                            supporters</label>
+                    </div>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="calls-officials"
+                            value="Make calls to elected officials">
+                        <label for="calls-officials" class="volunteer-form__label">Make calls to elected
+                            officials</label>
+                    </div>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="endorsement"
+                            value="Outreach to groups/businesses for endorsement/support">
+                        <label for="endorsement" class="volunteer-form__label">Outreach to groups/businesses for
+                            endorsement/support</label>
+                    </div>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="lte"
+                            value="Join our letter-to-the-editor-group">
+                        <label for="lte" class="volunteer-form__label">Join our letter-to-the-editor-group</label>
+                    </div>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="social-media"
+                            value="Share content on social media">
+                        <label for="social-media" class="volunteer-form__label">Share content on social media</label>
+                    </div>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="texting-team"
+                            value="Join our texting team">
+                        <label for="texting-team" class="volunteer-form__label">Join our texting team</label>
+                    </div>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="fundraising"
+                            value="Help with fundraising">
+                        <label for="fundraising" class="volunteer-form__label">Help with fundraising</label>
+                    </div>
+                    <div class="interests-wrapper">
+                        <input type="checkbox" class="volunteer-form__input" name="stay-involved" value="Stay Involved">
+                        <label for="stay-involved" class="volunteer-form__label">Stay Involved</label>
+                    </div>
+                </div>
+                <div class="volunteer-submit">
+                    <input class="volunteer-form__btn" type="submit" name="submit" value="Submit">
+                </div>
+            </form>
         </section>
     </main>
 
@@ -133,6 +247,7 @@
         </div>
     </footer>
     <!-- END FOOTER -->
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>
