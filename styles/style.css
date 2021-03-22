@@ -657,12 +657,12 @@ h6 {
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type="checkbox"],
   input[type="radio"] {
-    --active: #1f272a;
+    --active: #5dbbef;
     --active-inner: #fff;
     --focus: 2px rgba(39, 94, 254, 0.3);
-    --border: #acc0c7;
+    --border: #bbc1e1;
     --border-hover: #1f272a;
-    --background: #ecf1f4;
+    --background: #fff;
     --disabled: #f6f8ff;
     --disabled-inner: #e1e6f9;
     -webkit-appearance: none;
@@ -783,6 +783,21 @@ h6 {
   }
   input[type="checkbox"].switch:disabled:not(:checked):after {
     opacity: 0.6;
+  }
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+  input[type="radio"]:after {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--active-inner);
+    opacity: 0;
+    -webkit-transform: scale(var(--s, 0.7));
+            transform: scale(var(--s, 0.7));
+  }
+  input[type="radio"]:checked {
+    --s: 0.5;
   }
 }
 
@@ -4690,5 +4705,121 @@ hr.hr-2-about {
 
 .donate-header h2 {
   margin-top: 2rem;
+}
+
+/* DONATION FORM */
+.donation-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: #061a24;
+  margin-top: 5rem;
+  background: #ecf1f4c0;
+  border-radius: 8px;
+  padding: 2rem 3.5rem;
+  max-width: 600px;
+  -webkit-box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25), -15px 15px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25), -15px 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.doante-amounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.donation-form__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.donation-form__input {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 5.5rem;
+  max-width: 400px;
+  outline: none;
+  border: 1px solid #ecf1f4;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  background: #ecf1f4;
+  -webkit-transition: background 0.25s, border-color 0.25s, color 0.25s;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.donation-form__input:focus {
+  background: #fafcfc;
+  border-color: #1f272a79;
+}
+
+.donation-form__input::-webkit-input-placeholder {
+  color: #838688;
+}
+
+.donation-form__input:-ms-input-placeholder {
+  color: #838688;
+}
+
+.donation-form__input::-ms-input-placeholder {
+  color: #838688;
+}
+
+.donation-form__input::placeholder {
+  color: #838688;
+}
+
+.donation-form__btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 8px;
+  background: #5dbbef;
+  color: #fafcfc;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+.donation-form__btn:hover {
+  opacity: 0.6;
+}
+
+.donation-info {
+  font-size: 1.4rem;
+}
+
+.donation-form__item {
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

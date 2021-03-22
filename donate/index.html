@@ -76,7 +76,32 @@
                 <h1>Protect Colorado</h1>
                 <h2>Donate now to keep our water, air, and climate safe.</h2>
             </header>
-            <div class="donate-container"></div>
+            <!--FORM START-->
+            <div class="donation-container">
+                <form class="donation-form" id="donation-form" action="./" method="POST">
+                    <div class="donation-form__title">Choose an amount to give</div>
+                    <div class="donation-form__item doante-amounts">
+                        <button type="button" class="donation-form__btn">$35</button>
+                        <button type="button" class="donation-form__btn">$50</button>
+                        <button type="button" class="donation-form__btn">$100</button>
+                        <button type="button" class="donation-form__btn">$250</button>
+                        <button type="button" class="donation-form__btn">$500</button>
+                        <input id="other-donation" class="donation-form__input" name="other-donation" type="text"
+                            placeholder="Other Amount">
+                    </div>
+                    <div class="donation-form__item">
+                        <input name="one-time" type="radio" id="one-time" class="donation-form__input-radio" /> One-time
+                        <input name="monthly" type="radio" id="monthly" class="donation-form__input-radio" /> Monthly
+                    </div>
+                    <div class="donation-form__item">
+                        <button class="donation-form__btn" type="submit" id="submit">Enter Payment Info</button>
+                        <p class="donation-info">Colorado Rising For Communities Council is a tax-exempt 501(c)3
+                            organization. Contributions
+                            to Colorado Rising For Communities are tax-deductible to the fullest extent of the law.</p>
+                    </div>
+                </form>
+            </div>
+            <!--FORM END-->
         </section>
     </main>
 

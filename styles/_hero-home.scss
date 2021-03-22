@@ -158,12 +158,12 @@
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type="checkbox"],
   input[type="radio"] {
-    --active: #1f272a;
+    --active: #5dbbef;
     --active-inner: #fff;
     --focus: 2px rgba(39, 94, 254, 0.3);
-    --border: #acc0c7;
+    --border: #bbc1e1;
     --border-hover: #1f272a;
-    --background: #ecf1f4;
+    --background: #fff;
     --disabled: #f6f8ff;
     --disabled-inner: #e1e6f9;
     -webkit-appearance: none;
@@ -274,6 +274,20 @@
           }
         }
       }
+    }
+  }
+  input[type="radio"] {
+    border-radius: 50%;
+    &:after {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: var(--active-inner);
+      opacity: 0;
+      transform: scale(var(--s, 0.7));
+    }
+    &:checked {
+      --s: 0.5;
     }
   }
 }
