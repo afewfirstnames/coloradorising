@@ -18,7 +18,7 @@
 }
 
 .climate-redi-container {
-  height: 100vh;
+  height: 200vh;
 }
 
 .climate-redi-information {
@@ -28,11 +28,17 @@
   justify-content: center;
   text-align: center;
   position: relative;
-  h4 {
+
+  .yellow-header {
     max-width: 950px;
     width: 100%;
     line-height: 3.2rem;
     color: $fireyellow;
+  }
+  h4 {
+    max-width: 800px;
+    width: 100%;
+    line-height: 3.2rem;
   }
 }
 
@@ -40,5 +46,24 @@
   position: absolute;
   width: 100%;
   max-width: 1200px;
+}
+
+.cr-main-subheader {
   width: 100%;
+  max-width: 1200px;
+  margin: 5rem auto;
+  text-transform: none;
+}
+
+.climate-redi-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.redi-img-2 {
+  width: 100%;
+  max-width: 300px;
+  padding-right: 4rem;
 }
