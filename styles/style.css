@@ -3081,34 +3081,34 @@ hr.hr-2-yellow-bottom {
 
 #prevBtn {
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 10;
   left: 5rem;
   font-size: 4rem;
-  color: #ecf1f4;
+  color: #fafcfc;
   cursor: pointer;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
 #prevBtn:hover {
-  color: #5dbbef;
+  opacity: 0.7;
 }
 
 #nextBtn {
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 10;
   right: 5rem;
   font-size: 4rem;
-  color: #ecf1f4;
+  color: #fafcfc;
   cursor: pointer;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
 #nextBtn:hover {
-  color: #5dbbef;
+  opacity: 0.7;
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -5110,5 +5110,74 @@ hr.hr-2-about {
   .volunteer-subheader h3 {
     font-size: 1.6rem;
   }
+}
+
+.contact-form-wrapper {
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10rem;
+}
+
+.contact-header {
+  height: 90vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("/images/contact-header.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("/images/contact-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: #fafcfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.left-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  width: 300px;
+}
+
+.left-sidebar .link {
+  text-transform: uppercase;
+}
+
+.contact-email-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

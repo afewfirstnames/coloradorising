@@ -22,28 +22,28 @@
 
 #prevBtn {
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 10;
   left: 5rem;
   font-size: 4rem;
-  color: $dorian;
+  color: $cloud;
   cursor: pointer;
   transition: all 0.35s ease-in-out;
   &:hover {
-    color: $bluespruce;
+    opacity: 0.7;
   }
 }
 #nextBtn {
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 10;
   right: 5rem;
   font-size: 4rem;
-  color: $dorian;
+  color: $cloud;
   cursor: pointer;
   transition: all 0.35s ease-in-out;
   &:hover {
-    color: $bluespruce;
+    opacity: 0.7;
   }
 }
 
