@@ -1,0 +1,22 @@
+.redi-header {
+  height: 90vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
+    url("/our-work/images/climate-redi-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: $cloud;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  span {
+    color: $fireyellow;
+  }
+}
+
+.climate-redi-wrapper {
+  height: 100vh;
+}
