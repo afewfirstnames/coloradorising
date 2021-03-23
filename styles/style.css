@@ -5431,4 +5431,94 @@ hr.hr-2-about {
   background: #ffc030;
   color: #061a24;
 }
+
+/* CARD */
+.truth-rising-card {
+  background: #ecf1f4;
+  color: #1f272a;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 15rem auto;
+  padding: 4rem 4rem;
+}
+
+.truth-rising-card h2 {
+  padding-left: 3.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.truth-rising-row {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.truth-card-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 550px;
+}
+
+.truth-card-col p {
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.truth-card-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 550px;
+  background: #ffc030;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.truth-card-col-2 p {
+  width: 400px;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.truth-card-col-2 h2 {
+  padding: 0;
+}
+
+iframe {
+  border-radius: 8px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -75,3 +75,63 @@
     color: $onyx;
   }
 }
+
+/* CARD */
+.truth-rising-card {
+  background: $dorian;
+  color: $slate;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 15rem auto;
+  padding: 4rem 4rem;
+  h2 {
+    padding-left: 3.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.truth-rising-row {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.truth-card-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 550px;
+  p {
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+}
+.truth-card-col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 550px;
+  background: $fireyellow;
+  padding: 2rem;
+  border-radius: 8px;
+  p {
+    width: 400px;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  h2 {
+    padding: 0;
+  }
+}
+
+iframe {
+  border-radius: 8px;
+}
