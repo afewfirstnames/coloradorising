@@ -5192,7 +5192,7 @@ hr.hr-2-about {
 }
 
 .justice-rising-page-header {
-  height: 60vh;
+  height: 90vh;
   width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("/our-work/images/justice-rising-header.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("/our-work/images/justice-rising-header.jpg");
@@ -5364,9 +5364,71 @@ hr.hr-2-about {
 .truth-rising-subheader h2 {
   position: absolute;
   width: 100%;
-  padding-top: 5rem;
   max-width: 1200px;
   width: 100%;
   text-transform: none;
+}
+
+.truth-rising-info {
+  color: #ffc030;
+  max-width: 525px;
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.truth-rising-info p {
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.truth-rising-call-out {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.truth-rising-call-out h4 {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.truth-rising-call-out-2 {
+  text-align: center;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.truth-rising-call-out-2 h3 {
+  display: block;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px;
+  background: #ffc030;
+  color: #061a24;
 }
 /*# sourceMappingURL=style.css.map */

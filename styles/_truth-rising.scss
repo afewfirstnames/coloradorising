@@ -28,9 +28,50 @@
   h2 {
     position: absolute;
     width: 100%;
-    padding-top: 5rem;
     max-width: 1200px;
     width: 100%;
     text-transform: none;
+  }
+}
+
+.truth-rising-info {
+  color: $fireyellow;
+  max-width: 525px;
+  width: 100%;
+  margin: 5rem auto;
+  p {
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.truth-rising-call-out {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h4 {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+
+.truth-rising-call-out-2 {
+  text-align: center;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    display: block;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+    background: $fireyellow;
+    color: $onyx;
   }
 }
