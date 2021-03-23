@@ -17,6 +17,28 @@
   }
 }
 
-.climate-redi-wrapper {
+.climate-redi-container {
   height: 100vh;
+}
+
+.climate-redi-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  h4 {
+    max-width: 950px;
+    width: 100%;
+    line-height: 3.2rem;
+    color: $fireyellow;
+  }
+}
+
+.cr-main-header {
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  width: 100%;
 }
