@@ -5313,4 +5313,60 @@ hr.hr-2-about {
 .mid-block h4 {
   margin-bottom: 5rem;
 }
+
+.truth-rising-page-header {
+  height: 90vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("/our-work/images/turth-rising-header.JPG");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("/our-work/images/turth-rising-header.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: #fafcfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.truth-rising-container {
+  height: 200vh;
+}
+
+.truth-rising-subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.truth-rising-subheader h2 {
+  position: absolute;
+  width: 100%;
+  padding-top: 5rem;
+  max-width: 1200px;
+  width: 100%;
+  text-transform: none;
+}
 /*# sourceMappingURL=style.css.map */
