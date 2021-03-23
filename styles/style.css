@@ -3066,7 +3066,6 @@ hr.hr-2-yellow-bottom {
   max-width: 1120px;
   margin: 50px auto;
   overflow: hidden;
-  border: 2px solid #5dbbef;
   border-radius: 8px;
   position: relative;
 }
@@ -4807,12 +4806,19 @@ hr.hr-2-about {
   text-align: center;
   outline: none;
   cursor: pointer;
-  -webkit-transition: background 0.2s ease-in-out;
-  transition: background 0.2s ease-in-out;
+}
+
+.active-btn {
+  color: #ef5d83;
 }
 
 .donation-form__btn:hover {
-  opacity: 0.6;
+  opacity: 0.7;
+}
+
+.donation-form__btn:active {
+  background-color: #5def80;
+  color: #1f272a;
 }
 
 .donation-info {
@@ -5179,5 +5185,132 @@ hr.hr-2-about {
 .contact-email-wrapper {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.js-content-container {
+  height: 200vh;
+}
+
+.justice-rising-page-header {
+  height: 60vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("/our-work/images/justice-rising-header.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("/our-work/images/justice-rising-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: #fafcfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justice-rising-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.justice-rising-information {
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding: 4rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  line-height: 3.5rem;
+  overflow: scroll;
+  background: #ecf1f4;
+  color: #1f272a;
+}
+
+.justice-rising-information .js-main-header {
+  color: #5dbbef;
+  text-transform: none;
+  line-height: 4.5rem;
+  padding-bottom: 2rem;
+}
+
+.justice-rising-information span {
+  background-color: #ffc030;
+}
+
+.js-subheader {
+  color: #5dbbef;
+  padding-bottom: 2rem;
+}
+
+.small-block {
+  width: 600px;
+  text-align: left;
+  line-height: 3.5rem;
+  position: relative;
+  overflow: visible;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.center-block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.award-wrapper {
+  position: absolute;
+  right: -65px;
+  top: -70px;
+}
+
+.award {
+  width: 175px;
+}
+
+.city {
+  padding: 4.5rem 0;
+  color: #5dbbef;
+}
+
+.mid-block {
+  text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mid-block h4 {
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

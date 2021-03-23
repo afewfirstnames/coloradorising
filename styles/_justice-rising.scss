@@ -1,0 +1,93 @@
+.js-content-container {
+  height: 200vh;
+}
+
+.justice-rising-page-header {
+  height: 60vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url("/our-work/images/justice-rising-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  color: $cloud;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.justice-rising-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+}
+.justice-rising-information {
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  line-height: 3.5rem;
+  overflow: scroll;
+  background: $dorian;
+  color: $slate;
+  .js-main-header {
+    color: $bluespruce;
+    text-transform: none;
+    line-height: 4.5rem;
+    padding-bottom: 2rem;
+  }
+  span {
+    background-color: $fireyellow;
+  }
+}
+
+.js-subheader {
+  color: $bluespruce;
+  padding-bottom: 2rem;
+}
+
+.small-block {
+  width: 600px;
+  text-align: left;
+  line-height: 3.5rem;
+  position: relative;
+  overflow: visible;
+  align-items: flex-start;
+}
+
+.center-block {
+  align-items: center;
+}
+
+.award-wrapper {
+  position: absolute;
+  right: -65px;
+  top: -70px;
+}
+
+.award {
+  width: 175px;
+}
+
+.city {
+  padding: 4.5rem 0;
+  color: $bluespruce;
+}
+
+.mid-block {
+  text-align: left;
+  align-items: flex-start;
+  h4 {
+    margin-bottom: 5rem;
+  }
+}

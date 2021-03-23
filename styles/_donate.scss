@@ -91,11 +91,19 @@
   text-align: center;
   outline: none;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
+  // transition: all 0.2s ease-in-out;
+}
+
+.active-btn {
+  color: $rose;
 }
 
 .donation-form__btn:hover {
-  opacity: 0.6;
+  opacity: 0.7;
+}
+.donation-form__btn:active {
+  background-color: $evergreen;
+  color: $slate;
 }
 
 .donation-info {
