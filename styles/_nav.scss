@@ -112,7 +112,75 @@
   cursor: pointer;
 }
 
-/* LARGER SCREEN ADJUSTMENTS */
+/* DROP DOWN MENU */
+.ourwork-dropdown {
+  position: relative;
+}
+
+.ourwork-dropdown ul {
+  position: absolute;
+  background: $dorian;
+  list-style: none;
+  margin-top: 1rem;
+  width: 25rem;
+  border-radius: 8px;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1rem);
+  transition: all 0.4s ease;
+}
+
+.ourwork-dropdown button {
+  background: none;
+  border: none;
+  color: $cloud;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dropdown-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.25px solid $lightslate;
+  cursor: pointer;
+}
+
+.dropdown-item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+.dropdown-item:last-child {
+  border-radius: 0 0 8px 8px;
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: $fireyellow;
+}
+
+.dropdown-link {
+  color: $onyx;
+  text-decoration: none;
+}
+
+.ourwork-dropdown button:focus + ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.ourwork-drop i {
+  font-size: 1.8rem;
+}
 
 /* SMALLER SCREEN ADJUSTMENTS */
 @media screen and (max-width: 1396px) {

@@ -32,9 +32,25 @@
                 <div class="line"></div>
             </div>
             <ul class="navbar-menu">
-                <li class="nav-item">
-                    <a class="nav__link" href="/our-work/index.html">Our Work</a>
-                </li>
+                <div class="ourwork-dropdown">
+                    <button class="nav-item nav__link ourwork-drop">Our Work<i class="fas fa-caret-down"></i></button>
+                    <ul>
+                        <li class="dropdown-item"><a href="/our-work/index.html" class="dropdown-link btn__text">Our
+                                Work</a>
+                        </li>
+                        <li class="dropdown-item"><a href="/our-work/justice-rising.html"
+                                class="dropdown-link btn__text">Justice Rising</a>
+                        </li>
+                        <li class="dropdown-item"><a href="/our-work/truth-rising.html"
+                                class="dropdown-link btn__text">Truth Rising</a></li>
+                        <li class="dropdown-item"><a href="/our-work/climate-redi.html"
+                                class="dropdown-link btn__text">Climate REDI</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link btn__text">Community
+                                Organizing</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link btn__text">What Is Fracking?</a>
+                        </li>
+                    </ul>
+                </div>
                 <li class="nav-item">
                     <a class="nav__link" href="/about-us/index.html">About Us</a>
                 </li>
@@ -135,7 +151,7 @@
                 </div>
                 <div class="email-text-wrapper">
                     <div class="text-email-agreement">
-                        <input type="checkbox" class="volunteer-form__input" name="text-agreement" value="yes-text">
+                        <input type="checkbox" name="text-agreement" id="text-agreement" value="yes-text">
                         <label for="text-agreement" class="volunteer-form__label">Can we text
                             you?</label>
                     </div>
@@ -143,7 +159,7 @@
                         this organization. Message and data rates may apply. Text HELP for more information. Text
                         STOP to stop receiving messages.</p>
                     <div class="text-email-agreement">
-                        <input type="checkbox" class="volunteer-form__input" name="email-agreement" value="yes-email">
+                        <input type="checkbox" name="email-agreement" value="yes-email">
                         <label for="email-agreement" class="volunteer-form__label">Can we email
                             you?</label>
                     </div>
@@ -152,50 +168,43 @@
                     <h5 class="volunteer-subtitle">There are many ways to help, please let us know about your volunteer
                         interests.</h5>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="general-volunteer"
-                            value="General Volunteer">
+                        <input type="checkbox" name="general-volunteer" value="General Volunteer">
                         <label for="general-volunteer" class="volunteer-form__label">Be a general volunteer</label>
                     </div>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="calls-volunteers"
-                            value="Make calls to volunteers & supporters">
+                        <input type="checkbox" name="calls-volunteers" value="Make calls to volunteers & supporters">
                         <label for="calls-volunteers" class="volunteer-form__label">Make calls to volunteers &
                             supporters</label>
                     </div>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="calls-officials"
-                            value="Make calls to elected officials">
+                        <input type="checkbox" name="calls-officials" value="Make calls to elected officials">
                         <label for="calls-officials" class="volunteer-form__label">Make calls to elected
                             officials</label>
                     </div>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="endorsement"
+                        <input type="checkbox" name="endorsement"
                             value="Outreach to groups/businesses for endorsement/support">
                         <label for="endorsement" class="volunteer-form__label">Outreach to groups/businesses for
                             endorsement/support</label>
                     </div>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="lte"
-                            value="Join our letter-to-the-editor-group">
+                        <input type="checkbox" name="lte" value="Join our letter-to-the-editor-group">
                         <label for="lte" class="volunteer-form__label">Join our letter-to-the-editor-group</label>
                     </div>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="social-media"
-                            value="Share content on social media">
+                        <input type="checkbox" name="social-media" value="Share content on social media">
                         <label for="social-media" class="volunteer-form__label">Share content on social media</label>
                     </div>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="texting-team"
-                            value="Join our texting team">
+                        <input type="checkbox" name="texting-team" value="Join our texting team">
                         <label for="texting-team" class="volunteer-form__label">Join our texting team</label>
                     </div>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="fundraising"
-                            value="Help with fundraising">
+                        <input type="checkbox" name="fundraising" value="Help with fundraising">
                         <label for="fundraising" class="volunteer-form__label">Help with fundraising</label>
                     </div>
                     <div class="interests-wrapper">
-                        <input type="checkbox" class="volunteer-form__input" name="stay-involved" value="Stay Involved">
+                        <input type="checkbox" name="stay-involved" value="Stay Involved">
                         <label for="stay-involved" class="volunteer-form__label">Stay Involved</label>
                     </div>
                 </div>
