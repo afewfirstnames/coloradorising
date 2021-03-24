@@ -4189,8 +4189,8 @@ hr.hr-2-white {
 .about-us-header {
   height: 90vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("/about-us/images/about-us-header");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("/about-us/images/about-us-header");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("/about-us/images/about-us-header.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("/about-us/images/about-us-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
