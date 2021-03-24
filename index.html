@@ -188,7 +188,8 @@
             </header>
             <div class="map-wrapper">
                 <div class="map-img-wrapper">
-                    <img src="/images/fracking-map.jpg" alt="Map of fracking wells in Colorado" class="map-img">
+                    <img src="/images/fracking-map.jpg" alt="Map of fracking wells in Colorado" class="map-img"
+                        loading="lazy">
                     <div class="map-img__hover">
                         <p class="fracking-text">There are 60,000+ active wells in Colorado</p>
                         <a href="https://denverpostdata.carto.com/viz/3ec962a6-2c6b-11e7-b3d3-0ee66e2c9693/embed_map"
@@ -215,31 +216,33 @@
             <div class="row">
                 <div class="col">
                     <div class="feature-img">
-                        <img src="/images/main_video_thumbnail.png" width="100%" alt="">
-                        <img src="/icons/play.svg" class="play-btn" onclick="playVideo('videos/main_video.mp4')">
+                        <img src="/images/main_video_thumbnail.png" width="100%" alt="" loading="lazy">
+                        <img src="/icons/play.svg" class="play-btn" onclick="playVideo('videos/main_video.mp4')"
+                            loading="lazy">
                     </div>
                 </div>
                 <div class="col">
                     <div class="small-img-row">
                         <div class="small-img">
-                            <img src="/images/side_video_1_thumbnail.png" class="small-image" alt="">
-                            <img src="/icons/play.png" class="play-btn" onclick="playVideo('videos/side_video_3.mp4')">
+                            <img src="/images/side_video_1_thumbnail.png" class="small-image" alt="" loading="lazy">
+                            <img src="/icons/play.png" class="play-btn" onclick="playVideo('videos/side_video_3.mp4')"
+                                loading="lazy">
                         </div>
                         <p>Kathryn – Erie, CO</p>
                     </div>
                     <div class=" small-img-row">
                         <div class="small-img">
-                            <img src="/images/side_video_2_thumbnail.png" alt="">
+                            <img src="/images/side_video_2_thumbnail.png" alt="" loading="lazy">
                             <img src="/icons/play.png" class="play-btn play3"
-                                onclick="playVideo('videos/side_video_2.mp4')">
+                                onclick="playVideo('videos/side_video_2.mp4')" loading="lazy">
                         </div>
                         <p>Ann Marie – Broomfield, CO</p>
                     </div>
                     <div class="small-img-row">
                         <div class="small-img">
-                            <img src="/images/side_video_3_thumbnail.png" alt="">
+                            <img src="/images/side_video_3_thumbnail.png" alt="" loading="lazy">
                             <img src="/icons/play.png" class="play-btn play4"
-                                onclick="playVideo('videos/side_video_1.mp4')">
+                                onclick="playVideo('videos/side_video_1.mp4')" loading="lazy">
                         </div>
                         <p>Brett – Firestone, CO</p>
                     </div>
@@ -248,7 +251,7 @@
 
             <div class="video-player" id="videoPlayer">
                 <video width="100%" controls autoplay id="myVideo" preload="none">
-                    <source src="videos/side_video_1.mp4" type="video/mp4">
+                    <source src="videos/side_video_1.mp4" type="video/mp4" loading="lazy">
                 </video>
                 <img src="/icons/close.png" class="close-btn" onclick="stopVideo()">
             </div>
@@ -680,7 +683,7 @@
                 <i class="fas fa-chevron-right next"></i>
                 <div class="news-wrapper">
                     <div class="post">
-                        <img src="/images/news-slider-1.jpg" class="slider-image">
+                        <img src="/images/news-slider-1.jpg" class="slider-image" loading="lazy">
                         <div class="post-info">
                             <h5>
                                 <a href="#" class="link-dark">Colorado Oil & Gas Conservation Commission (COGCC)
@@ -697,7 +700,7 @@
                         </div>
                     </div>
                     <div class="post">
-                        <img src="/images/news-slider-2.jpg" class="slider-image">
+                        <img src="/images/news-slider-2.jpg" class="slider-image" loading="lazy">
                         <div class="post-info">
                             <h5>
                                 <a href="#" class="link-dark">Colorado’s Beloved Landscapes Deserve Better Than The
@@ -711,7 +714,7 @@
                         </div>
                     </div>
                     <div class="post">
-                        <img src="/images/news-slider-3.jpg" class="slider-image">
+                        <img src="/images/news-slider-3.jpg" class="slider-image" loading="lazy">
                         <div class="post-info">
                             <h5>
                                 <a href="#" class="link-dark">Colorado Oil and Gas Commission (COGCC) Discusses Proposed
@@ -725,7 +728,7 @@
                         </div>
                     </div>
                     <div class="post">
-                        <img src="/images/news-slider-4.jpg" class="slider-image">
+                        <img src="/images/news-slider-4.jpg" class="slider-image" loading="lazy">
                         <div class="post-info">
                             <h5>
                                 <a href="#" class="link-dark">Boulder County District Court Rules Against Longmont
@@ -739,7 +742,7 @@
                         </div>
                     </div>
                     <div class="post">
-                        <img src="/images/news-slider-1.jpg" class="slider-image">
+                        <img src="/images/news-slider-1.jpg" class="slider-image" loading="lazy">
                         <div class="post-info">
                             <h5>
                                 <a href="#" class="link-dark">Colorado Oil & Gas Conservation Commission (COGCC)
@@ -771,22 +774,26 @@
             <div class="carousel-container">
                 <div class="carousel-slide">
                     <div class="iframe-container" id="lastClone">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/P73J3yAoHrM" frameborder="0"
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/P73J3yAoHrM"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                     <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IjLX5pXrsnw" frameborder="0"
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IjLX5pXrsnw"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                     <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XpufGhYl_2U" frameborder="0"
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/XpufGhYl_2U"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                     <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QM5_iFz9pw0" frameborder="0"
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/QM5_iFz9pw0"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -796,7 +803,8 @@
                             allowfullscreen></iframe>
                     </div>
                     <div class="iframe-container" id="firstClone">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IjLX5pXrsnw" frameborder="0"
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IjLX5pXrsnw"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -890,12 +898,11 @@
         </div>
     </footer>
     <!-- END FOOTER -->
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"
         integrity="sha512-dmLpQXesGDP0ZM/s8zGKQU3Xlbix57QfwFNFh+BY5Ad/afObQ/lBo200mHWuHu8LOoI7tlK09yP3L/4DjdQ5Xw=="
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollama"></script><!-- SLICK CAROUSEL -->
+    <!-- SLICK CAROUSEL -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"></script>
