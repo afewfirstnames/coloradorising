@@ -40,6 +40,7 @@ hr.hr-2-about {
 .board-profiles {
   height: 222vh;
   width: 100vw;
+  // margin: 0 auto;
   padding: 10rem 0;
 }
 
@@ -176,10 +177,10 @@ hr.hr-2-about {
   p {
     padding-bottom: 4rem;
     line-height: 2.8rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     -webkit-column-width: 500px;
     -moz-column-width: 500px;
-    column-width: 500px;
+    column-width: 575px;
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
@@ -211,7 +212,7 @@ hr.hr-2-about {
   background-color: $dorian;
   border-radius: 8px 8px 8px 8px;
   width: 50%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 10rem auto;
   min-width: 325px;
 }
@@ -220,7 +221,7 @@ hr.hr-2-about {
   border-radius: 8px 8px 8px 8px;
   width: 50%;
   min-width: 325px;
-  max-width: 700px;
+  max-width: 800px;
   margin: 10rem auto;
 }
 
@@ -376,5 +377,23 @@ hr.hr-2-about {
   }
   .board-card {
     margin: 2rem;
+  }
+}
+
+/* CARD ADJUSTMENTS 3 & 2 */
+@media screen and (min-width: 1760px) {
+  .board-profiles {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1322px) {
+  .board-profiles {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .board-card {
+    width: 35rem;
   }
 }

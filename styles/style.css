@@ -20,6 +20,7 @@
 html {
   font-size: 62.5%;
   background-color: #061a24;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1567,119 +1568,96 @@ h6 {
   }
 }
 
-#outro {
+.wif-body {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
+}
+
+.wif-header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
   background: #061a24;
-  min-height: 100vh;
-  width: auto;
-}
-
-#intro {
-  text-align: center;
-  margin-top: 20rem;
-}
-
-.infographic {
-  width: auto;
-  height: auto;
-}
-
-#scrolly {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #061a24;
-  padding: 10rem;
-}
-
-#scrolly > * {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-article {
-  position: relative;
-  padding: 0 1rem;
-  max-width: 33vw;
-}
-
-.is-fixed {
-  position: -webkit-sticky;
-  position: sticky;
-  width: 100%;
-  margin-bottom: 0;
-  border-radius: 8px;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  background-color: none;
-  z-index: 0;
-}
-
-.grahpic p {
-  text-align: center;
-  padding: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 8rem;
-  font-weight: 900;
   color: #fafcfc;
+  padding: 4rem;
+  text-align: center;
 }
 
-.step {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto 2rem auto;
-  background-color: #5d696d;
-  border-radius: 8px;
-  color: #fafcfc;
-}
-
-.step {
-  opacity: 0;
-  padding: 1rem;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.step.is-active {
-  opacity: 1;
-}
-
-.step:last-child {
-  margin-bottom: 0;
-}
-
-.step.is-active {
-  background-color: #ffc030;
-  color: #061a24;
-}
-
-.step--header {
-  font-size: 6.4rem;
-  font-weight: 800;
+.wif-sidebar {
+  font-size: 4rem;
   text-transform: uppercase;
 }
 
-.step p {
-  text-align: left;
-  padding: 1rem;
-  line-height: 1.5;
-  font-size: 3rem;
+.wif-nav {
+  white-space: nowrap;
+  background: #ffc030;
+  width: 100%;
+}
+
+.wif-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wif-nav li {
+  padding: 1rem 0;
+}
+
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  .wif-nav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.wif-nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #061a24;
+  text-decoration: none;
+}
+
+.wif-nav ul li a.current {
+  background: #ecf1f4;
+}
+
+.wif-main {
+  padding-bottom: 40rem;
+  background: #ecf1f4;
+  color: #1f272a;
+}
+
+.wif-section {
+  padding: 8rem;
+  margin: 0 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.wif-section p {
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.wif-img {
+  width: 600px;
+  border-radius: 8px;
 }
 
 .map-container {
@@ -4511,9 +4489,9 @@ hr.hr-2-about {
 .about-content p {
   padding-bottom: 4rem;
   line-height: 2.8rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   -webkit-column-width: 500px;
-  column-width: 500px;
+  column-width: 575px;
   -webkit-column-count: 1;
   column-count: 1;
 }
@@ -4549,7 +4527,7 @@ hr.hr-2-about {
   background-color: #ecf1f4;
   border-radius: 8px 8px 8px 8px;
   width: 50%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 10rem auto;
   min-width: 325px;
 }
@@ -4559,7 +4537,7 @@ hr.hr-2-about {
   border-radius: 8px 8px 8px 8px;
   width: 50%;
   min-width: 325px;
-  max-width: 700px;
+  max-width: 800px;
   margin: 10rem auto;
 }
 
@@ -4757,6 +4735,24 @@ hr.hr-2-about {
   }
   .board-card {
     margin: 2rem;
+  }
+}
+
+/* CARD ADJUSTMENTS 3 & 2 */
+@media screen and (min-width: 1760px) {
+  .board-profiles {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1322px) {
+  .board-profiles {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .board-card {
+    width: 35rem;
   }
 }
 
