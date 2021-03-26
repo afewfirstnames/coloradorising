@@ -5340,6 +5340,7 @@ hr.hr-2-about {
 
 .justice-rising-information .js-main-header {
   color: #5dbbef;
+  background-color: #ffc030;
   text-transform: none;
   line-height: 4.5rem;
   padding-bottom: 2rem;
@@ -5350,7 +5351,7 @@ hr.hr-2-about {
 }
 
 .js-subheader {
-  color: #5dbbef;
+  color: #ffc030;
   padding-bottom: 2rem;
 }
 
@@ -5395,6 +5396,45 @@ hr.hr-2-about {
 
 .mid-block h4 {
   margin-bottom: 5rem;
+}
+
+/* NEW BLOCKS */
+.js-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1f272a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 25rem;
+  margin-bottom: 15rem;
+}
+
+.js-content p {
+  padding-bottom: 4rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  -webkit-column-width: 500px;
+  column-width: 575px;
+  -webkit-column-count: 1;
+  column-count: 1;
+}
+
+.js-content h2 {
+  color: #061a24;
+  padding: 2rem;
+}
+
+.extra p {
+  padding-bottom: 8rem;
 }
 
 .truth-rising-page-header {

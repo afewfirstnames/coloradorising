@@ -42,6 +42,7 @@
   color: $slate;
   .js-main-header {
     color: $bluespruce;
+    background-color: $fireyellow;
     text-transform: none;
     line-height: 4.5rem;
     padding-bottom: 2rem;
@@ -52,7 +53,7 @@
 }
 
 .js-subheader {
-  color: $bluespruce;
+  color: $fireyellow;
   padding-bottom: 2rem;
 }
 
@@ -89,5 +90,37 @@
   align-items: flex-start;
   h4 {
     margin-bottom: 5rem;
+  }
+}
+
+/* NEW BLOCKS */
+.js-content {
+  display: flex;
+  color: $slate;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 25rem;
+  margin-bottom: 15rem;
+  p {
+    padding-bottom: 4rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    -webkit-column-width: 500px;
+    -moz-column-width: 500px;
+    column-width: 575px;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  h2 {
+    color: $onyx;
+    padding: 2rem;
+  }
+}
+
+.extra {
+  p {
+    padding-bottom: 8rem;
   }
 }
