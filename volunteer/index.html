@@ -217,54 +217,91 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-col footer-logo">
-                    <ul>
-                        <li><a href="/"><img src="/images/logo-test.png" id="footer-logo" /></a></li>
+        <!-- CTA FOOTER -->
+        <div class="footer-cta-container">
+            <div class="footer-cta-row">
+                <div class="footer-cta-col">
+                    <h4>Support Our Work</h4>
+                    <ul class="footer-doante-btn-row">
+                        <li><a href="#" class="footer-cta-donate-amount btn">$25</a></li>
+                        <li><a href="#" class="footer-cta-donate-amount btn">$35</a></li>
+                        <li><a href="#" class="footer-cta-donate-amount btn">$50</a></li>
+                        <li><a href="#" class="footer-cta-donate-amount btn">$75</a></li>
+                        <li><a href="#" class="footer-cta-donate-amount btn">$100</a></li>
+                        <li><a href="#" class="footer-cta-donate-amount btn">Other</a></li>
+                        <li><a href="#" class="footer-cta-donate-btn">Donate</a></li>
                     </ul>
                 </div>
-                <div class="footer-col footer-connect">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="/about-us/index.html" class="footer-link link">About Us</a></li>
-                        <li><a href="/volunteer/index.html" class="footer-link link">Volunteer</a></li>
-                        <li><a href="/contact.html" class="footer-link link">Contact Us</a></li>
-                    </ul>
+                <div class="footer-cta-col">
+                    <form class="footer-cta-form" id="footer-form" action="./" method="POST">
+                        <div class="footer-cta-form__item">
+                            <h4>Join Us</h4>
+                            <input name="email" type="email" id="footer-email" class="footer-cta-form__input"
+                                placeholder="email@email.com" />
+                            <button class="footer-cta-form__btn" type="submit" id="submit">Sign Up</button>
+                            <p>When you sign up, you'll recieve the latest updates to keep you informed and let you know
+                                how you can take action.</p>
+                        </div>
+                    </form>
                 </div>
-                <div class="footer-col footer-site">
-                    <h4>Site</h4>
-                    <ul>
-                        <li><a href="#" class="footer-link link">En Español</a></li>
-                        <li><a href="#" class="footer-link link">Site Map</a></li>
-                        <li><a href="#" class="footer-link link">Privacy Policy</a></li>
-                    </ul>
+                <div class="footer-cta-col">
+                    <a href="contact.html"><button class="footer-cta-form__contact" type="submit"
+                            id="submit">Contact</button></a>
                 </div>
-                <div class="footer-col footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="footer-social-links">
-                        <a class="social" href="https://www.facebook.com/ColoradoRising/" target="_blank"><img
-                                src="/icons/facebook.png" alt="facebook" /></a>
-                        <a class="social" href="https://twitter.com/coloradorising?lang=en" target="_blank"><img
-                                src="/icons/twitter.png" alt="twitter" /></a>
-                        <a class="social" href="https://www.youtube.com/channel/UCBYJBFrPAVXAqnbuCwlrnvA"
-                            target="_blank"><img src="/icons/youtube.png" alt="youtube" /></a>
-                        <a class="social" href="https://www.instagram.com/coloradorising/" target="_blank"><img
-                                src="/icons/instagram.png" alt="instagram" /></a>
+            </div>
+        </div>
+        <!-- END CTA FOOTER -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col footer-logo">
+                        <ul>
+                            <li><a href="/"><img src="/images/logo-test.png" id="footer-logo" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-connect">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="/about-us/index.html" class="footer-link link">About Us</a></li>
+                            <li><a href="/volunteer/index.html" class="footer-link link">Volunteer</a></li>
+                            <li><a href="/contact.html" class="footer-link link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-site">
+                        <h4>Site</h4>
+                        <ul>
+                            <li><a href="#" class="footer-link link">En Español</a></li>
+                            <li><a href="#" class="footer-link link">Site Map</a></li>
+                            <li><a href="#" class="footer-link link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="footer-social-links">
+                            <a class="social" href="https://www.facebook.com/ColoradoRising/" target="_blank"><img
+                                    src="/icons/facebook.png" alt="facebook" /></a>
+                            <a class="social" href="https://twitter.com/coloradorising?lang=en" target="_blank"><img
+                                    src="/icons/twitter.png" alt="twitter" /></a>
+                            <a class="social" href="https://www.youtube.com/channel/UCBYJBFrPAVXAqnbuCwlrnvA"
+                                target="_blank"><img src="/icons/youtube.png" alt="youtube" /></a>
+                            <a class="social" href="https://www.instagram.com/coloradorising/" target="_blank"><img
+                                    src="/icons/instagram.png" alt="instagram" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- COPYRIGHT FOOTER -->
-        <div class="footer-copyright">
-            <div class="footer-copyright-row">
-                <p class="po-box">PO Box 18872 Boulder, CO 80308</p>
-                <p>&#169; Colorado Rising For Communities 2021</p>
+            <!-- COPYRIGHT FOOTER -->
+            <div class="footer-copyright">
+                <div class="footer-copyright-row">
+                    <p class="po-box">PO Box 18872 Boulder, CO 80308</p>
+                    <p>&#169; Colorado Rising For Communities 2021</p>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!-- END FOOTER -->
-    <script src="scripts/app.js"></script>
+        </footer>
+        <!-- END FOOTER -->
+        <script src="scripts/app.js"></script>
 </body>
 
 </html>
