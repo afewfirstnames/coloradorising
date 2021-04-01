@@ -18,10 +18,8 @@
 }
 
 .justice-rising-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
   flex-wrap: wrap;
   width: 90vw;
   margin: 0 auto;

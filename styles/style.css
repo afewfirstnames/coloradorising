@@ -2646,7 +2646,7 @@ video:focus {
   background: linear-gradient(to right, #ffb300 0%, #ffb300 5px, transparent 5px);
   background-repeat: repeat-x;
   background-size: 100%;
-  color: #061a24;
+  color: #fafcfc;
   padding-left: 1rem;
 }
 
@@ -5299,19 +5299,9 @@ hr.hr-2-about {
 }
 
 .justice-rising-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 90vw;
@@ -5743,6 +5733,15 @@ iframe {
   width: 100%;
   max-width: 300px;
   padding-right: 4rem;
+}
+
+.yellow-highlight {
+  background: linear-gradient(to right, #ffc030 100%, #ffc030 5px, transparent);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: #061a24;
+  padding-left: 1rem;
+  text-decoration: none;
 }
 
 .co-header {

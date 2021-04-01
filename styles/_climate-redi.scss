@@ -67,3 +67,17 @@
   max-width: 300px;
   padding-right: 4rem;
 }
+
+.yellow-highlight {
+  background: linear-gradient(
+    to right,
+    $fireyellow 100%,
+    $fireyellow 5px,
+    transparent
+  );
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: $onyx;
+  padding-left: 1rem;
+  text-decoration: none;
+}
