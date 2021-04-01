@@ -4339,6 +4339,8 @@ hr.hr-2-about {
 
 .board-card {
   width: 40rem;
+  height: 750px;
+  min-height: 600px;
   background: #ecf1f4;
   color: #061a24;
   border-radius: 8px;
@@ -4626,6 +4628,11 @@ hr.hr-2-about {
   max-width: 110px;
   width: 100%;
   margin-bottom: 2rem;
+}
+
+.optional i {
+  color: #ecf1f4;
+  pointer-events: none;
 }
 
 /* LEADERSHIP */
