@@ -267,14 +267,24 @@ hr.hr-2-green {
   height: 2px;
   background: $slate;
   margin-bottom: 4rem;
-  background-image: linear-gradient(to right, #333, $evergreen, #333);
+  background-image: linear-gradient(
+    to right,
+    $bluespruce,
+    $evergreen,
+    $bluespruce
+  );
 }
 hr.hr-2-green-bottom {
   border: 0;
   height: 2px;
   background: $slate;
   margin-top: 4rem;
-  background-image: linear-gradient(to right, #333, $evergreen, #333);
+  background-image: linear-gradient(
+    to right,
+    $bluespruce,
+    $evergreen,
+    $bluespruce
+  );
 }
 hr.hr-2-yellow {
   border: 0;

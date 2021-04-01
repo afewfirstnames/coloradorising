@@ -18,7 +18,7 @@
 }
 
 .climate-redi-container {
-  height: 200vh;
+  height: auto;
 }
 
 .climate-redi-information {
@@ -67,6 +67,11 @@
   max-width: 300px;
   padding-right: 4rem;
 }
+.redi-img-3 {
+  width: 100%;
+  max-width: 450px;
+  // padding-right: 4rem;
+}
 
 .yellow-highlight {
   background: linear-gradient(
@@ -80,4 +85,17 @@
   color: $onyx;
   padding-left: 1rem;
   text-decoration: none;
+}
+
+/* symposium */
+.symposium {
+  height: 100vh;
+}
+
+.symposium-header {
+  text-align: center;
+}
+
+.symposium-wrapper {
+  margin-top: 20rem;
 }

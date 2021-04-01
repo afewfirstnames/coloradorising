@@ -2694,8 +2694,8 @@ hr.hr-2-green {
   height: 2px;
   background: #1f272a;
   margin-bottom: 4rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#333), color-stop(#5def80), to(#333));
-  background-image: linear-gradient(to right, #333, #5def80, #333);
+  background-image: -webkit-gradient(linear, left top, right top, from(#5dbbef), color-stop(#5def80), to(#5dbbef));
+  background-image: linear-gradient(to right, #5dbbef, #5def80, #5dbbef);
 }
 
 hr.hr-2-green-bottom {
@@ -2703,8 +2703,8 @@ hr.hr-2-green-bottom {
   height: 2px;
   background: #1f272a;
   margin-top: 4rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#333), color-stop(#5def80), to(#333));
-  background-image: linear-gradient(to right, #333, #5def80, #333);
+  background-image: -webkit-gradient(linear, left top, right top, from(#5dbbef), color-stop(#5def80), to(#5dbbef));
+  background-image: linear-gradient(to right, #5dbbef, #5def80, #5dbbef);
 }
 
 hr.hr-2-yellow {
@@ -5669,7 +5669,7 @@ iframe {
 }
 
 .climate-redi-container {
-  height: 200vh;
+  height: auto;
 }
 
 .climate-redi-information {
@@ -5735,6 +5735,11 @@ iframe {
   padding-right: 4rem;
 }
 
+.redi-img-3 {
+  width: 100%;
+  max-width: 450px;
+}
+
 .yellow-highlight {
   background: linear-gradient(to right, #ffc030 100%, #ffc030 5px, transparent);
   background-repeat: repeat-x;
@@ -5742,6 +5747,19 @@ iframe {
   color: #061a24;
   padding-left: 1rem;
   text-decoration: none;
+}
+
+/* symposium */
+.symposium {
+  height: 100vh;
+}
+
+.symposium-header {
+  text-align: center;
+}
+
+.symposium-wrapper {
+  margin-top: 20rem;
 }
 
 .co-header {
