@@ -4297,7 +4297,7 @@ hr.hr-2-about {
 
 /* PROFILE CARDS */
 .board-profiles {
-  height: 222vh;
+  height: auto;
   width: 100vw;
   padding: 10rem 0;
 }
@@ -4513,7 +4513,10 @@ hr.hr-2-about {
 }
 
 .header-div-2 {
-  background-color: #5dbbef;
+  background: #c49a90;
+  background: #c1a082;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9e0142), color-stop(#d13b4b), color-stop(#f0704a), color-stop(#fcab63), color-stop(#fedc8c), color-stop(#fbf8b0), color-stop(#e0f3a1), color-stop(#aadda2), color-stop(#69bda9), color-stop(#4288b5), to(#4288b5));
+  background-image: linear-gradient(90deg, #9e0142, #d13b4b, #f0704a, #fcab63, #fedc8c, #fbf8b0, #e0f3a1, #aadda2, #69bda9, #4288b5, #4288b5);
   -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -4627,7 +4630,7 @@ hr.hr-2-about {
 
 /* LEADERSHIP */
 .leadership-profile {
-  height: 150vh;
+  height: auto;
 }
 
 .leadership-card {

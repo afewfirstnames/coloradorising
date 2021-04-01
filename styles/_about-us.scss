@@ -38,9 +38,8 @@ hr.hr-2-about {
 
 /* PROFILE CARDS */
 .board-profiles {
-  height: 222vh;
+  height: auto;
   width: 100vw;
-  // margin: 0 auto;
   padding: 10rem 0;
 }
 
@@ -200,7 +199,22 @@ hr.hr-2-about {
   min-width: 325px;
 }
 .header-div-2 {
-  background-color: $bluespruce;
+  background: #c49a90;
+  background: #c1a082;
+  background-image: linear-gradient(
+    90deg,
+    #9e0142,
+    #d13b4b,
+    #f0704a,
+    #fcab63,
+    #fedc8c,
+    #fbf8b0,
+    #e0f3a1,
+    #aadda2,
+    #69bda9,
+    #4288b5,
+    #4288b5
+  );
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   width: 100%;
   text-align: center;
@@ -288,7 +302,7 @@ hr.hr-2-about {
 
 /* LEADERSHIP */
 .leadership-profile {
-  height: 150vh;
+  height: auto;
 }
 .leadership-card {
   width: 60rem;
