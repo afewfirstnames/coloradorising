@@ -2691,7 +2691,7 @@ hr.hr-2-blue-bottom {
 
 hr.hr-2-green {
   border: 0;
-  height: 2px;
+  height: 5px;
   background: #1f272a;
   margin-bottom: 4rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#5dbbef), color-stop(#5def80), to(#5dbbef));
@@ -2700,7 +2700,7 @@ hr.hr-2-green {
 
 hr.hr-2-green-bottom {
   border: 0;
-  height: 2px;
+  height: 5px;
   background: #1f272a;
   margin-top: 4rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#5dbbef), color-stop(#5def80), to(#5dbbef));
@@ -5761,15 +5761,93 @@ iframe {
 
 /* symposium */
 .symposium {
-  height: 100vh;
+  height: auto;
 }
 
 .symposium-header {
   text-align: center;
 }
 
+.symp-header-wrapper {
+  background: #ecf1f4;
+}
+
 .symposium-wrapper {
   margin-top: 20rem;
+}
+
+.symp-overview {
+  margin: 0 auto;
+  color: #fafcfc;
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  width: 60vw;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.symp-card {
+  margin-top: 10rem;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.symp-card:last-child {
+  margin-bottom: 10rem;
+}
+
+.symp-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ecf1f4;
+  color: #061a24;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.symp-col {
+  margin-bottom: 2rem;
+}
+
+.symp-col h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.symp-col p {
+  line-height: 1.8;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.symp-bios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.symp-bios p {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .co-header {

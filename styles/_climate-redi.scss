@@ -89,13 +89,74 @@
 
 /* symposium */
 .symposium {
-  height: 100vh;
+  height: auto;
 }
 
 .symposium-header {
   text-align: center;
 }
 
+.symp-header-wrapper {
+  background: $dorian;
+}
+
 .symposium-wrapper {
   margin-top: 20rem;
+}
+
+.symp-overview {
+  margin: 0 auto;
+  color: $cloud;
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  width: 60vw;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.symp-card {
+  margin-top: 10rem;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.symp-card:last-child {
+  margin-bottom: 10rem;
+}
+
+.symp-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: $dorian;
+  color: $onyx;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.symp-col {
+  margin-bottom: 2rem;
+  h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    line-height: 1.8;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.symp-bios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  p {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
 }
