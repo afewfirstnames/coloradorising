@@ -1,8 +1,8 @@
 .volunteer-header {
   height: 90vh;
   width: 100vw;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
-    url("/volunteer/images/volunteer-header.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url("/volunteer/images/volunteer-header-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
@@ -10,7 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 20rem;
   text-align: center;
 }
 

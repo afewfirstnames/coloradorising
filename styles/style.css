@@ -2646,7 +2646,7 @@ video:focus {
   background: linear-gradient(to right, #ffb300 0%, #ffb300 5px, transparent 5px);
   background-repeat: repeat-x;
   background-size: 100%;
-  color: #fafcfc;
+  color: #061a24;
   padding-left: 1rem;
 }
 
@@ -4954,8 +4954,8 @@ hr.hr-2-about {
 .volunteer-header {
   height: 90vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(transparent)), url("/volunteer/images/volunteer-header.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("/volunteer/images/volunteer-header.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent)), url("/volunteer/images/volunteer-header-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("/volunteer/images/volunteer-header-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
@@ -4970,9 +4970,10 @@ hr.hr-2-about {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 20rem;
   text-align: center;
 }
 
@@ -5287,8 +5288,8 @@ hr.hr-2-about {
 .justice-rising-page-header {
   height: 90vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("/our-work/images/justice-rising-header.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("/our-work/images/justice-rising-header.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(transparent)), url("/our-work/images/justice-rising-header.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("/our-work/images/justice-rising-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
